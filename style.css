@@ -7,5 +7,7 @@ body {
 
 div.lit-lay {
   color: #aaa; }
+  div.lit-lay .lit-lay-part .lit-lay-line-text {
+    color: #2ba; }
 
 /*# sourceMappingURL=style.css.map */
