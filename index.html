@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<script type="text/javascript" src="https://bognaum.github.io/lit-lay/build/lit-lay-bundle.js"></script>
+	<title>lit-lays</title>
+</head>
+<body>
+	<div class="container">
+		<h2>URL</h2>
+		<div id="d33" class="lit-lay" 
+			data-style="
+				font-size: 20px; 
+				color: #78a;
+				color: #89c;
+				color: #2ba;
+			"
+			data-line-num="18">
+			[
+				{
+					"td": "href",
+					"ch": [
+						{
+							"td": "origin",
+							"ch": [
+								{
+									"td": "protocol",
+									"ch": "https:"
+								},
+								{
+									"ch": "//"
+								},
+								{
+									"td": "host",
+									"ch": [
+										{
+											"td": "hostname",
+											"ch": "developer.mozilla.org"
+										},
+										{
+											"ch": ":"
+										},
+										{
+											"td": "port",
+											"ch": "443"
+										}
+									]
+								}
+							]
+						},
+						{
+							"td": "pathname",
+							"ch": "/en-US/search"
+						},
+						{
+							"td": "search",
+							"ch": "?q=URL"
+						},
+						{
+							"td": "hash",
+							"ch": "#search-results"
+						}
+					]
+				}
+			]
+		</div>
+		<div id="d33" class="lit-lay" 
+			data-style="
+				font-size: 20px; 
+				color: #78a;
+				color: #89c;
+				color: #2ba;
+			"
+			data-line-num="73">
+			[
+				{
+					"td": "href",
+					"ch": [
+						{
+							"td": "origin",
+							"ch": [
+								{
+									"td": "protocol",
+									"ch": "https:"
+								},
+								{
+									"ch": "//"
+								},
+								{
+									"td": "Not an origin!",
+									"tdStyle": "color: #e95; font-weight: bold;",
+									"tbStyle": "border-color: #e95;",
+									"style": "color: #e95;",
+									"ch": [
+										{
+											"td": "username",
+											"ch": "someUser"
+										},
+										{
+											"ch": ":"
+										},
+										{
+											"td": "password",
+											"ch": "Pass1234"
+										},
+										{
+											"ch": "@"
+										}
+									]
+								},
+								{
+									"td": "host",
+									"ch": [
+										{
+											"td": "hostname",
+											"ch": "developer.mozilla.org"
+										},
+										{
+											"ch": ":"
+										},
+										{
+											"td": "port",
+											"ch": "443"
+										}
+									]
+								}
+							]
+						},
+						{
+							"td": "pathname",
+							"ch": "/en-US/search"
+						},
+						{
+							"td": "search",
+							"ch": "?q=URL"
+						},
+						{
+							"td": "hash",
+							"ch": "#search-results"
+						}
+					]
+				}
+			]
+		</div>
+	</div>
+	<script type="text/javascript">
+		const litLay = new LitLay.default();
+		document.querySelectorAll(".lit-lay").forEach((v) => {
+			litLay.build(v);
+		});
+	</script>
+</body>
+</html>

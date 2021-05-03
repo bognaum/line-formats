@@ -1,0 +1,10 @@
+body {
+	color: #ccc;
+	background-color: #222;
+	>.container {
+		margin: 10px 100px 500px 100px;
+		font-family: verdana, arial, sans-serif;
+	}
+}
+
+@import "lit-lay-style";
