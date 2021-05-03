@@ -1,9 +1,30 @@
-div.lit-lay {
+.lit-lay {
 	color: #aaa;
 	
 	.lit-lay-part {
 		.lit-lay-line-text {
 			color: #2ba;
 		}
+	}
+	.lit-lay-part.red-descr {
+		.lit-lay-h-line.red-descr {
+			border-color: #f88;
+		}
+		.lit-lay-td-block.red-descr {
+			color: #f88;
+		}
+	}
+	.lit-lay-part.red-content {
+		.lit-lay-line-text {
+			color: #f88;
+		}
+	}
+}
+
+.lit-lay {
+	filter: blur(10px);
+	&.executing,
+	&.executed {
+		filter: none;
 	}
 }
