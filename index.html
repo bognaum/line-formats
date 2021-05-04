@@ -5,6 +5,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style.css">
 	<script type="text/javascript" src="https://bognaum.github.io/lit-lay/build/lit-lay-bundle.js"></script>
+	<!-- <script type="text/javascript" src="./lit-lay/build/lit-lay-bundle.js"></script> -->
+
+	<script type="text/javascript" src="https://pagecdn.io/lib/ace/1.4.12/ace.js"></script>
+	<script type="text/javascript" src="https://pagecdn.io/lib/ace/1.4.12/ext-language_tools.js"></script>
+	<script type="text/javascript" src="https://pagecdn.io/lib/ace/1.4.12/ext-emmet.js"></script>
+	<script type="text/javascript" src="./Ace-Emmet/emmet.js"></script>
+	<script type="text/javascript" src="./Ace_PlugKit/plug-ace.js"></script>
+	<link rel="stylesheet" href="./Ace_PlugKit/plug-ace.css">
+
 	<title>lit-lays</title>
 </head>
 <body>
@@ -14,7 +23,7 @@
 			data-style="
 				font-size: 20px; 
 			"
-			data-line-num="17">
+			data-line-num="26">
 			[
 				{
 					"td": "href",
@@ -67,7 +76,7 @@
 			data-style="
 				font-size: 20px; 
 			"
-			data-line-num="70">
+			data-line-num="79">
 			[
 				{
 					"td": "href",
@@ -139,9 +148,70 @@
 				}
 			]
 		</div>
+		<details>
+			<summary>code</summary>
+			<div class="ace-plug-js">"Hello"</div>
+		</details>
 	</div>
 	<script type="text/javascript">
+		!function() {
+			document.querySelectorAll(".ace-plug").forEach((v) => {
+				PlugAce.retabulate(v);
+				PlugAce.plug(v, {maxLines: 30});
+			});
+			document.querySelectorAll(".ace-plug-file").forEach((v) => {
+				PlugAce.plug(v, {maxLines: 30});
+			});
+			document.querySelectorAll(".ace-plug-js").forEach((v) => {
+				PlugAce.retabulate(v);
+				PlugAce.plug(v, 
+					{
+						maxLines: 30,
+						syntax: "javascript", 
+						syntaxMark: "js",
+						theme: "idle_fingers"
+					});
+			});
+			document.querySelectorAll(".ace-plug-html").forEach((v) => {
+				PlugAce.retabulate(v);
+				PlugAce.plug(v, {maxLines: 30, syntax: "html"});
+			});
+			document.querySelectorAll(".ace-plug-php").forEach((v) => {
+				PlugAce.retabulate(v);
+				PlugAce.plug(v, {maxLines: 30, syntax: "php"});
+			});
+			document.querySelectorAll(".ace-plug-css").forEach((v) => {
+				PlugAce.retabulate(v);
+				PlugAce.plug(v, {maxLines: 30, syntax: "css"});
+			});
+			document.querySelectorAll(".ace-plug-scss").forEach((v) => {
+				PlugAce.retabulate(v);
+				PlugAce.plug(v, {maxLines: 30, syntax: "scss"});
+			});
+			document.querySelectorAll(".ace-plug-py").forEach((v) => {
+				PlugAce.retabulate(v);
+				PlugAce.plug(v, 
+					{
+						maxLines: 30,
+						syntax: "python", 
+						syntaxMark: "py",
+					});
+			});
+			document.querySelectorAll(".ace-plug-text").forEach((v) => {
+				PlugAce.retabulate(v);
+				PlugAce.plug(v, {maxLines: 30, syntax: "text"});
+			});
+		}();
+	</script>
+	<!-- <script type="text/javascript">
 		const litLay = new LitLay.default();
+		document.querySelectorAll(".lit-lay").forEach((v) => {
+			litLay.build(v);
+		});
+	</script> -->
+	<script type="module">
+		import LL from "https://bognaum.github.io/lit-lay/lit-lay.js";
+		const litLay = new LL();
 		document.querySelectorAll(".lit-lay").forEach((v) => {
 			litLay.build(v);
 		});
