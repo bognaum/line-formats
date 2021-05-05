@@ -149,10 +149,15 @@
 		</div>
 		<details>
 			<summary>code</summary>
-			<div class="ace-plug-js">"Hello"</div>
+			<div class="ace-plug-js">
+				var url = new URL("https://someUser:Pass1234@developer.mozilla.org:443/en-US/search?q=URL#search-results");
+				console.log(url);
+			</div>
 		</details>
+		<!-- <div class="ace-plug-js">console.log("Hello");</div> -->
 	</div>
 	<script type="text/javascript">
+		// place at the bottom of the page
 		!function() {
 				acePK.default.plugOpts.theme = "idle_fingers";
 				document.querySelectorAll(".ace-plug-js").forEach((v) => {
