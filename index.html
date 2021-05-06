@@ -140,7 +140,7 @@
 						},
 						{
 							"td": "search",
-							"ch": "?q=URL"
+							"ch": "?a=1&b=2"
 						},
 						{
 							"td": "hash",
@@ -153,10 +153,11 @@
 		<details>
 			<summary>code</summary>
 			<div class="ace-plug-js">
-				var url = new URL("https://someUser:Pass1234@developer.mozilla.org:443/en-US/search?q=URL#search-results");
+				var url = new URL("https://someUser:Pass1234@developer.mozilla.org:443/en-US/search?a=1&b=2#search-results");
 				console.log(url);
 			</div>
 		</details>
+		<br>
 
 		<div class="lit-lay" data-line-num="161">
 			[
@@ -181,7 +182,7 @@
 						},
 						{
 							"td": "search",
-							"ch": "?q=URL"
+							"ch": "?a=1&b=2"
 						},
 						{
 							"td": "hash",
@@ -194,10 +195,11 @@
 		<details>
 			<summary>code</summary>
 			<div class="ace-plug-js">
-				var url = new URL("file:///D:/folder/folder/file.js?q=URL#search-results");
+				var url = new URL("file:///D:/folder/folder/file.js?a=1&b=2#search-results");
 				console.log(url);
 			</div>
 		</details>
+		<br>
 		
 
 		<h3>URLs in NodeJS</h3>
@@ -290,6 +292,7 @@
 				*/
 			</div>
 		</details>
+		<br>
 
 		<h4>WHATWG API</h4>
 		<div class="lit-lay" data-line-num="81">
@@ -414,6 +417,130 @@
 				 */
 			</div>
 		</details>
+		<br>
+		<div class="lit-lay" data-line-num="81">
+			[
+				{
+					"td": "href",
+					"ch": [
+						{
+							"td": "origin",
+							"ch": [
+								{
+									"td": "protocol",
+									"ch": "https:"
+								},
+								{
+									"ch": "//"
+								},
+								{
+									"td": "Not an origin!",
+									"class": "red-content red-descr",
+									"ch": [
+										{
+											"td": "username",
+											"ch": "someUser"
+										},
+										{
+											"ch": ":"
+										},
+										{
+											"td": "password",
+											"ch": "Pass1234"
+										},
+										{
+											"ch": "@"
+										}
+									]
+								},
+								{
+									"td": "host",
+									"ch": [
+										{
+											"td": "hostname",
+											"ch": "developer.mozilla.org"
+										},
+										{
+											"ch": ":"
+										},
+										{
+											"td": "port",
+											"ch": "8080"
+										}
+									]
+								}
+							]
+						},
+						{
+							"td": "pathname",
+							"ch": "/en-US/search"
+						},
+						{
+							"td": "search",
+							"ch": [
+								{
+									"ch": "?"
+								},
+								{
+									"ch": "a",
+									"bd": "searchParams\n    .Symbol(query)[0]"
+								},
+								{
+									"ch": "="
+								},
+								{
+									"ch": "1",
+									"bd": "searchParams\n    .Symbol(query)[1]"
+								},
+								{
+									"ch": "&"
+								},
+								{
+									"ch": "b",
+									"bd": "searchParams\n    .Symbol(query)[2]"
+								},
+								{
+									"ch": "="
+								},
+								{
+									"ch": "2",
+									"bd": "searchParams\n    .Symbol(query)[3]"
+								}
+							]
+						},
+						{
+							"td": "hash",
+							"ch": "#search-results"
+						}
+					]
+				}
+			]
+		</div>
+		<details>
+			<summary>code</summary>
+			<div class="ace-plug-js">
+				var url_ = new URL("https://someUser:Pass1234@developer.mozilla.org:8080/en-US/search?a=1&b=2#search-results");
+				console.log(url_);
+
+				/*
+				{
+				  href: 'https://someUser:Pass1234@developer.mozilla.org:8080/en-US/search?a=1&b=2#search-results',
+				  origin: 'https://developer.mozilla.org:8080',
+				  protocol: 'https:',
+				  username: 'someUser',
+				  password: 'Pass1234',
+				  host: 'developer.mozilla.org:8080',
+				  hostname: 'developer.mozilla.org',
+				  port: '8080',
+				  pathname: '/en-US/search',
+				  search: '?a=1&b=2',
+				  searchParams: URLSearchParams { 'a' => '1', 'b' => '2' },
+				  hash: '#search-results'
+				}
+				 */
+			</div>
+		</details>
+		<br>
 		<!-- <div class="ace-plug-js">console.log("Hello");</div> -->
 	</div>
 	<script type="text/javascript">
