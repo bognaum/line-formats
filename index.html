@@ -13,16 +13,23 @@
 	<script type="text/javascript" src="./ace-plug-kit/Ace-Emmet/emmet.js"></script>
 	<script type="text/javascript" src="./ace-plug-kit/ace-plug-kit.js"></script>
 
+	<!-- <script type="text/javascript" src="./openDetails/openDetails.js"></script> -->
+	<link rel="stylesheet" type="text/css" href="./contentsSection/contentsSection.css">
+	<script type="text/javascript" src="./contentsSection/contentsSection.js"></script>
+
 	<title>lit-lays</title>
 </head>
 <body>
 	<div class="container">
-		<h2>URL</h2>
-		<div class="lit-lay" 
+		<h1>Literals</h1>
+		<fieldset class="contents-section"><legend>Contents</legend></fieldset>
+		<h2>URLs</h2>
+		<h3>URLs in browser</h3>
+		<!-- <div class="lit-lay" 
 			data-style="
 				font-size: 20px; 
 			"
-			data-line-num="26">
+			data-line-num="32">
 			[
 				{
 					"td": "href",
@@ -70,12 +77,12 @@
 					]
 				}
 			]
-		</div>
+		</div> -->
 		<div class="lit-lay" 
 			data-style="
 				font-size: 20px; 
 			"
-			data-line-num="79">
+			data-line-num="85">
 			[
 				{
 					"td": "href",
@@ -154,12 +161,60 @@
 				console.log(url);
 			</div>
 		</details>
+
+		<div class="lit-lay" 
+			data-style="
+				font-size: 20px; 
+			"
+			data-line-num="169">
+			[
+				{
+					"td": "href",
+					"ch": [
+						{
+							"td": "origin",
+							"ch": [
+								{
+									"bd": "protocol",
+									"ch": "file:"
+								},
+								{
+									"ch": "//"
+								}
+							]
+						},
+						{
+							"td": "pathname",
+							"ch": "/D:/folder/folder/file.js"
+						},
+						{
+							"td": "search",
+							"ch": "?q=URL"
+						},
+						{
+							"td": "hash",
+							"ch": "#search-results"
+						}
+					]
+				}
+			]
+		</div>
+		<details>
+			<summary>code</summary>
+			<div class="ace-plug-js">
+				var url = new URL("file:///D:/folder/folder/file.js?q=URL#search-results");
+				console.log(url);
+			</div>
+		</details>
+
+		<h3>URLs in NodeJS</h3>
 		<!-- <div class="ace-plug-js">console.log("Hello");</div> -->
 	</div>
 	<script type="text/javascript">
 		// place at the bottom of the page
 		!function() {
-				acePK.default.plugOpts.theme = "idle_fingers";
+				// acePK.default.plugOpts.theme = "idle_fingers";
+				acePK.default.plugOpts.theme = "twilight";
 				document.querySelectorAll(".ace-plug-js").forEach((v) => {
 					acePK.retabulate(v);
 					acePK.plug(v, {syntax: "javascript"});
