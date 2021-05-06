@@ -78,11 +78,7 @@
 				}
 			]
 		</div> -->
-		<div class="lit-lay" 
-			data-style="
-				font-size: 20px; 
-			"
-			data-line-num="85">
+		<div class="lit-lay" data-line-num="81">
 			[
 				{
 					"td": "href",
@@ -162,11 +158,7 @@
 			</div>
 		</details>
 
-		<div class="lit-lay" 
-			data-style="
-				font-size: 20px; 
-			"
-			data-line-num="169">
+		<div class="lit-lay" data-line-num="161">
 			[
 				{
 					"td": "href",
@@ -206,8 +198,154 @@
 				console.log(url);
 			</div>
 		</details>
+		
 
 		<h3>URLs in NodeJS</h3>
+		<h4>Legacy API</h4>
+		<div class="lit-lay" data-line-num="207">
+			[
+				{
+					"td": "href",
+					"ch": [
+						{
+							"td": "protocol",
+							"ch": "https:"
+						},
+						{
+							"ch": "//"
+						},
+						{
+							"td": "auth",
+							"ch": "someUser:Pass1234@"
+						},
+						{
+							"td": "host",
+							"ch": [
+								{
+									"td": "hostname",
+									"ch": "developer.mozilla.org"
+								},
+								{
+									"ch": ":"
+								},
+								{
+									"td": "port",
+									"ch": "443"
+								}
+							]
+						},
+						{
+							"td": "pathname",
+							"ch": "/en-US/search"
+						},
+						{
+							"td": "search",
+							"ch": [
+								{
+									"ch":"?"
+								},
+								{
+									"td": "query",
+									"ch": "q=URL"
+								}
+							]
+						},
+						{
+							"td": "hash",
+							"ch": "#search-results"
+						}
+					]
+				}
+			]
+		</div>
+		<details>
+			<summary>code</summary>
+			<div class="ace-plug-js">
+				var url_ = url.parse("https://someUser:Pass1234@developer.mozilla.org:443/en-US/search?q=URL#search-results")
+				console.log(url_);
+			</div>
+		</details>
+
+		<h4>WHATWG API</h4>
+		<div class="lit-lay" data-line-num="81">
+			[
+				{
+					"td": "href",
+					"ch": [
+						{
+							"td": "origin",
+							"ch": [
+								{
+									"td": "protocol",
+									"ch": "https:"
+								},
+								{
+									"ch": "//"
+								},
+								{
+									"td": "Not an origin!",
+									<!-- "tdStyle": "color: #f88; font-weight: bold;",
+									"tbStyle": "border-color: #f88;",
+									"style": "color: #f88;", -->
+									"class": "red-content red-descr",
+									"ch": [
+										{
+											"td": "username",
+											"ch": "someUser"
+										},
+										{
+											"ch": ":"
+										},
+										{
+											"td": "password",
+											"ch": "Pass1234"
+										},
+										{
+											"ch": "@"
+										}
+									]
+								},
+								{
+									"td": "host",
+									"ch": [
+										{
+											"td": "hostname",
+											"ch": "developer.mozilla.org"
+										},
+										{
+											"ch": ":"
+										},
+										{
+											"td": "port",
+											"ch": "443"
+										}
+									]
+								}
+							]
+						},
+						{
+							"td": "pathname",
+							"ch": "/en-US/search"
+						},
+						{
+							"td": "search",
+							"ch": "?q=URL"
+						},
+						{
+							"td": "hash",
+							"ch": "#search-results"
+						}
+					]
+				}
+			]
+		</div>
+		<details>
+			<summary>code</summary>
+			<div class="ace-plug-js">
+				var url_ = new URL("file:///D:/folder/folder/file.js?q=URL#search-results");
+				console.log(url_);
+			</div>
+		</details>
 		<!-- <div class="ace-plug-js">console.log("Hello");</div> -->
 	</div>
 	<script type="text/javascript">
