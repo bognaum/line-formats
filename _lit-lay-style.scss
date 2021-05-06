@@ -1,25 +1,25 @@
 .lit-lay {
-	color: #aaa;
+	color: $main_c;
 	margin: 5px;
 	padding: 5px;
 	
 	.lit-lay-part {
 		.lit-lay-line-text {
-			color: #2ba;
+			color: $green;
 			font-size: 20px;
 		}
 	}
 	.lit-lay-part.red-descr {
 		.lit-lay-h-line.red-descr {
-			border-color: #f88;
+			border-color: $red;
 		}
 		.lit-lay-td-block.red-descr {
-			color: #f88;
+			color: $red;
 		}
 	}
 	.lit-lay-part.red-content {
 		.lit-lay-line-text {
-			color: #f88;
+			color: $red;
 		}
 	}
 }

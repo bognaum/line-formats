@@ -1,14 +1,37 @@
+$main_c: #aaa;
+$bg_c  : #222;
+$green : #2ba;
+$red   : #f88;
+
 body {
-	color: #ccc;
-	background-color: #222;
+	color: $main_c;
+	background-color: $bg_c;
 	>.container {
 		margin: 10px 100px 500px 100px;
 		font-family: verdana, arial, sans-serif;
 	}
 }
 
-summary {
-	cursor: pointer;
+details {
+	summary {
+		cursor: pointer;
+		// margin: 2px 30px;
+		margin: 0 5px;
+		padding: 2px 20px;
+		border: 1px solid $main_c;
+		display: inline-block;
+	}
+	&[open] {}
+}
+
+details[open] {
+	// border: 1px solid $main_c;
+	// margin-top: 15px;
+	summary {
+		// margin-top: -15px;
+		display: block;
+		// background-color: $bg_c;
+	}
 }
 
 @import "lit-lay-style";

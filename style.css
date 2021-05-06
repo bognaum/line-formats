@@ -1,12 +1,19 @@
 body {
-  color: #ccc;
+  color: #aaa;
   background-color: #222; }
   body > .container {
     margin: 10px 100px 500px 100px;
     font-family: verdana, arial, sans-serif; }
 
-summary {
-  cursor: pointer; }
+details summary {
+  cursor: pointer;
+  margin: 0 5px;
+  padding: 2px 20px;
+  border: 1px solid #aaa;
+  display: inline-block; }
+
+details[open] summary {
+  display: block; }
 
 .lit-lay {
   color: #aaa;
