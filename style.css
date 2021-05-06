@@ -9,9 +9,12 @@ summary {
   cursor: pointer; }
 
 .lit-lay {
-  color: #aaa; }
+  color: #aaa;
+  margin: 5px;
+  padding: 5px; }
   .lit-lay .lit-lay-part .lit-lay-line-text {
-    color: #2ba; }
+    color: #2ba;
+    font-size: 20px; }
   .lit-lay .lit-lay-part.red-descr .lit-lay-h-line.red-descr {
     border-color: #f88; }
   .lit-lay .lit-lay-part.red-descr .lit-lay-td-block.red-descr {
