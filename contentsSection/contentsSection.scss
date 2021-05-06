@@ -1,0 +1,74 @@
+
+.contents-section { 
+	$pv : 0px;
+	$ph : 40px;
+	$bfz : 10px;
+	$fzk : 2;
+	display: none;
+	&.activated{
+		display: block;
+	}
+	border: 1px solid #aaa;
+	margin: 20px 5px;
+	padding: 10px;
+	>legend{
+		color: #aaa;
+		font-style: italic;
+		margin-left: 20px;
+	}
+	>div{
+		>a{
+			text-decoration: none;
+			font-style: italic;
+			font-weight: bold;
+			// color: #333;
+			color: #ccc;
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+	}
+	>div.h1-link-div { 
+		padding: $pv $ph * (1 - 1);
+		font-size: ($bfz - 1) * $fzk;
+	} 
+	>div.h2-link-div { 
+		padding: $pv $ph * (2 - 1);
+		font-size: ($bfz - 2) * $fzk;
+	} 
+	>div.h3-link-div { 
+		padding: $pv $ph * (3 - 1);
+		font-size: ($bfz - 3) * $fzk;
+	} 
+	>div.h4-link-div { 
+		padding: $pv $ph * (4 - 1); 
+		font-size: ($bfz - 4) * $fzk;
+	} 
+	>div.h5-link-div { 
+		padding: $pv $ph * (5 - 1);
+		font-size: ($bfz - 5) * $fzk;
+	} 
+	>div.h6-link-div { 
+		padding: $pv $ph * (6 - 1);
+		font-size: ($bfz - 6) * $fzk;
+	} 
+
+} 
+
+a.contents-section--scroll-to-content-list{
+	&:before {
+		content: "☰";
+		content: "⬆UP";
+		display: inline-block;
+		padding-left: 10px;
+		padding-right: 10px;
+		min-height: 30px;
+		
+	}
+	text-decoration: none;
+	color: transparent;
+	&:hover{
+		color: #999;
+		text-shadow: 0 0 5px #999;
+	}
+}
