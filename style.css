@@ -34,4 +34,7 @@ details[open] summary {
   .lit-lay.executing, .lit-lay.executed {
     filter: none; }
 
+.ace-plug-kit__code-wrapper {
+  border-color: #aaa; }
+
 /*# sourceMappingURL=style.css.map */

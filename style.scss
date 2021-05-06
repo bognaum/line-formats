@@ -35,3 +35,7 @@ details[open] {
 }
 
 @import "lit-lay-style";
+
+.ace-plug-kit__code-wrapper {
+	border-color: $main_c;
+}
