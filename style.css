@@ -5,6 +5,9 @@ body {
     margin: 10px 100px 500px 100px;
     font-family: verdana, arial, sans-serif; }
 
+summary {
+  cursor: pointer; }
+
 .lit-lay {
   color: #aaa; }
   .lit-lay .lit-lay-part .lit-lay-line-text {
