@@ -1,6 +1,5 @@
 
 window.addEventListener("load", function(e){
-	console.log("OK");
 	
 	function fillContentsSection() {
 		var version = "2.1.0";
