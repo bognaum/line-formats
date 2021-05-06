@@ -216,7 +216,10 @@
 						},
 						{
 							"td": "auth",
-							"ch": "someUser:Pass1234@"
+							"ch": "someUser:Pass1234"
+						},
+						{
+							"ch": "@"
 						},
 						{
 							"td": "host",
@@ -235,18 +238,23 @@
 							]
 						},
 						{
-							"td": "pathname",
-							"ch": "/en-US/search"
-						},
-						{
-							"td": "search",
+							"td": "path",
 							"ch": [
 								{
-									"ch":"?"
+									"td": "pathname",
+									"ch": "/en-US/search"
 								},
 								{
-									"td": "query",
-									"ch": "q=URL"
+									"td": "search",
+									"ch": [
+										{
+											"ch":"?"
+										},
+										{
+											"td": "query",
+											"ch": "a=1&b=2"
+										}
+									]
 								}
 							]
 						},
@@ -261,8 +269,25 @@
 		<details>
 			<summary>code</summary>
 			<div class="ace-plug-js">
-				var url_ = url.parse("https://someUser:Pass1234@developer.mozilla.org:443/en-US/search?q=URL#search-results")
+				var url_ = url.parse("https://someUser:Pass1234@developer.mozilla.org:443/en-US/search?a=1&b=2#search-results")
 				console.log(url_);
+
+				/*
+				Url {
+				  protocol: 'https:',
+				  slashes: true,
+				  auth: 'someUser:Pass1234',
+				  host: 'developer.mozilla.org:443',
+				  port: '443',
+				  hostname: 'developer.mozilla.org',
+				  hash: '#search-results',
+				  search: '?a=1&b=2',
+				  query: 'a=1&b=2',
+				  pathname: '/en-US/search',
+				  path: '/en-US/search?a=1&b=2',
+				  href: 'https://someUser:Pass1234@developer.mozilla.org:443/en-US/search?a=1&b=2#search-results'
+				}
+				*/
 			</div>
 		</details>
 
@@ -284,9 +309,6 @@
 								},
 								{
 									"td": "Not an origin!",
-									<!-- "tdStyle": "color: #f88; font-weight: bold;",
-									"tbStyle": "border-color: #f88;",
-									"style": "color: #f88;", -->
 									"class": "red-content red-descr",
 									"ch": [
 										{
@@ -311,17 +333,17 @@
 										{
 											"td": "hostname",
 											"ch": "developer.mozilla.org"
-										},
-										{
-											"ch": ":"
-										},
-										{
-											"td": "port",
-											"ch": "443"
 										}
 									]
 								}
 							]
+						},
+						{
+							"ch": ":"
+						},
+						{
+							<!-- "td": "port", -->
+							"ch": "443"
 						},
 						{
 							"td": "pathname",
@@ -329,7 +351,36 @@
 						},
 						{
 							"td": "search",
-							"ch": "?q=URL"
+							"ch": [
+								{
+									"ch": "?"
+								},
+								{
+									"ch": "a",
+									"bd": "searchParams\n    .Symbol(query)[0]"
+								},
+								{
+									"ch": "="
+								},
+								{
+									"ch": "1",
+									"bd": "searchParams\n    .Symbol(query)[1]"
+								},
+								{
+									"ch": "&"
+								},
+								{
+									"ch": "b",
+									"bd": "searchParams\n    .Symbol(query)[2]"
+								},
+								{
+									"ch": "="
+								},
+								{
+									"ch": "2",
+									"bd": "searchParams\n    .Symbol(query)[3]"
+								}
+							]
 						},
 						{
 							"td": "hash",
@@ -342,8 +393,25 @@
 		<details>
 			<summary>code</summary>
 			<div class="ace-plug-js">
-				var url_ = new URL("file:///D:/folder/folder/file.js?q=URL#search-results");
+				var url_ = new URL("https://someUser:Pass1234@developer.mozilla.org:443/en-US/search?a=1&b=2#search-results");
 				console.log(url_);
+
+				/*
+				{
+				  href: 'https://someUser:Pass1234@developer.mozilla.org/en-US/search?a=1&b=2#search-results',
+				  origin: 'https://developer.mozilla.org',
+				  protocol: 'https:',
+				  username: 'someUser',
+				  password: 'Pass1234',
+				  host: 'developer.mozilla.org',
+				  hostname: 'developer.mozilla.org',
+				  port: '',
+				  pathname: '/en-US/search',
+				  search: '?a=1&b=2',
+				  searchParams: URLSearchParams { 'a' => '1', 'b' => '2' },
+				  hash: '#search-results'
+				}
+				 */
 			</div>
 		</details>
 		<!-- <div class="ace-plug-js">console.log("Hello");</div> -->
