@@ -4,7 +4,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style.css">
-	<script type="text/javascript" src="https://bognaum.github.io/lit-lay/build/lit-lay-bundle.js"></script>
+	<!-- <script type="text/javascript" src="https://bognaum.github.io/lit-lay/build/lit-lay-bundle.js"></script> -->
+	<!-- <script type="text/javascript" src="./lit-lay/build/lit-lay-bundle.js"></script> -->
 	<!-- <script type="text/javascript" src="./lit-lay/build/lit-lay-bundle.js"></script> -->
 
 	<script type="text/javascript" src="https://pagecdn.io/lib/ace/1.4.12/ace.js"></script>
@@ -780,7 +781,8 @@
 		});
 	</script> -->
 	<script type="module">
-		import LL from "https://bognaum.github.io/lit-lay/lit-lay.js";
+		// import LL from "https://bognaum.github.io/lit-lay/lit-lay.js";
+		import LL from "./lit-lay/lit-lay.js";
 		const litLay = new LL();
 		document.querySelectorAll(".lit-lay").forEach((v) => {
 			litLay.build(v);

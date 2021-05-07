@@ -1,3 +1,6 @@
 [submodule "ace-plug-kit"]
 	path = ace-plug-kit
 	url = https://github.com/bognaum/ace-plug-kit.git
+[submodule "lit-lay"]
+	path = lit-lay
+	url = https://github.com/bognaum/lit-lay.git
