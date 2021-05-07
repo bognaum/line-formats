@@ -1,0 +1,3 @@
+[submodule "ace-plug-kit"]
+	path = ace-plug-kit
+	url = https://github.com/bognaum/ace-plug-kit.git
