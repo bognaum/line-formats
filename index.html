@@ -541,7 +541,195 @@
 			</div>
 		</details>
 		<br>
-		<!-- <div class="ace-plug-js">console.log("Hello");</div> -->
+		
+
+
+		<h2>PHP pathinfo()</h2>
+		<div class="lit-lay">
+			[
+				{
+					"td": "dirname",
+					"ch": "/www/htdocs/inc"
+				},
+				{
+					"ch": "/"
+				},
+				{
+					"td": "basename",
+					"ch": [
+						{
+							"td": "filename",
+							"ch": "lib.inc"
+						},
+						{
+							"ch": "."
+						},
+						{
+							"bd": "extension",
+							<!-- "td": "", -->
+							"ch": "php"
+						}
+					]
+				}
+			]
+		</div>
+		<details>
+			<summary>code</summary>
+			<div class="ace-plug-php">
+				&lt;?php
+				$path_parts = pathinfo('/www/htdocs/inc/lib.inc.php');
+
+				echo $path_parts['dirname'], "\n";
+				echo $path_parts['basename'], "\n";
+				echo $path_parts['extension'], "\n";
+				echo $path_parts['filename'], "\n";
+				?&gt;
+			</div>
+		</details>
+		<br>
+		
+
+
+		<h2>NodeJS path.&lt;...&gt;()</h2>
+		<div class="lit-lay">
+			[
+				{
+					"td": "dirname",
+					"ch": "/www/htdocs/inc"
+				},
+				{
+					"ch": "/"
+				},
+				{
+					"td": "basename",
+					"ch": [
+						{
+							"td": "filename",
+							"ch": "lib.inc"
+						},
+						{
+							"bd": "extname",
+							<!-- "td": "", -->
+							"ch": ".php"
+						}
+					]
+				}
+			]
+		</div>
+		<details>
+			<summary>code</summary>
+			<div class="ace-plug-js">
+				console.log(path.basename("/www/htdocs/inc/lib.inc.php"));  // "lib.inc.php"
+				console.log(path.dirname ("/www/htdocs/inc/lib.inc.php"));  // "/www/htdocs/inc"
+				console.log(path.extname ("/www/htdocs/inc/lib.inc.php"));  // ".php"
+			</div>
+		</details>
+		<br>
+		
+
+
+		<h2>NodeJS path.parse()</h2>
+		<div class="lit-lay" style="display: inline-block;">
+			[
+				{
+					"td": "dir",
+					"ch": [
+						{
+							"bd": "root",
+							"td": "",
+							"ch": "/"
+						},
+						{
+							"ch": "www/htdocs/inc"
+						}
+					]
+				},
+				{
+					"ch": "/"
+				},
+				{
+					"td": "base",
+					"ch": [
+						{
+							"td": "name",
+							"ch": "lib.inc"
+						},
+						{
+							"td": "ext",
+							<!-- "td": "", -->
+							"ch": ".php"
+						}
+					]
+				}
+			]
+		</div>
+		 &nbsp;&nbsp;&nbsp;&nbsp; 
+		<div class="lit-lay" style="display: inline-block;">
+			[
+				{
+					"td": "dir",
+					"ch": [
+						{
+							"bd": "root",
+							"td": "",
+							"ch": "D:\\"
+						},
+						{
+							"ch": "GitHub-my\\ace-plug-kit"
+						}
+					]
+				},
+				{
+					"ch": "\\"
+				},
+				{
+					"td": "base",
+					"ch": [
+						{
+							"td": "name",
+							"ch": "templates"
+						},
+						{
+							"td": "ext",
+							<!-- "td": "", -->
+							"ch": ".html"
+						}
+					]
+				}
+			]
+		</div>
+		<details>
+			<summary>code</summary>
+			<div class="ace-plug-js">
+				var myPath = path.parse("/www/htdocs/inc/lib.inc.php");
+				console.log(myPath);
+
+				/*
+				{
+				  root: '/',
+				  dir: '/www/htdocs/inc',
+				  base: 'lib.inc.php',
+				  ext: '.php',
+				  name: 'lib.inc'
+				}
+				 */
+			</div>
+			<div class="ace-plug-js">
+				var myPath = path.parse("D:\\GitHub-my\\ace-plug-kit\\templates.html");
+				console.log(myPath);
+
+				/*
+				{
+				  root: 'D:\\',
+				  dir: 'D:\\GitHub-my\\ace-plug-kit',
+				  base: 'templates.html',
+				  ext: '.html',
+				  name: 'templates'
+				}
+				 */
+			</div>
+		</details>
+		<br>
 	</div>
 	<script type="text/javascript">
 		// place at the bottom of the page
