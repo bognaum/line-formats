@@ -619,9 +619,11 @@
 		<details>
 			<summary>code</summary>
 			<div class="ace-plug-js">
-				console.log(path.basename("/www/htdocs/inc/lib.inc.php"));  // "lib.inc.php"
-				console.log(path.dirname ("/www/htdocs/inc/lib.inc.php"));  // "/www/htdocs/inc"
-				console.log(path.extname ("/www/htdocs/inc/lib.inc.php"));  // ".php"
+				console.log(
+					path.dirname ("/www/htdocs/inc/lib.inc.php"), "\n",  // "/www/htdocs/inc"
+					path.basename("/www/htdocs/inc/lib.inc.php"), "\n",  // "lib.inc.php"
+					path.extname ("/www/htdocs/inc/lib.inc.php"), "\n"   // ".php"
+				);
 			</div>
 		</details>
 		<br>
