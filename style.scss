@@ -18,19 +18,19 @@ details {
 		// margin: 2px 30px;
 		margin: 0 5px;
 		padding: 2px 20px;
-		border: 1px solid $main_c;
-		display: inline-block;
+		border-bottom: 1px solid $main_c;
+		width: 100px;
+		box-sizing: border-box;
+		transition: all .2s linear;
 	}
 	&[open] {}
 }
 
 details[open] {
-	// border: 1px solid $main_c;
-	// margin-top: 15px;
 	summary {
-		// margin-top: -15px;
-		display: block;
-		// background-color: $bg_c;
+		width: initial;
+		width: 100%;
+		width: calc(100% - 5px - 5px);
 	}
 }
 
