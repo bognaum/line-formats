@@ -11,13 +11,15 @@ details summary {
   padding: 2px 20px;
   border-bottom: 1px solid #aaa;
   width: 100px;
-  box-sizing: border-box;
-  transition: all .2s linear; }
+  box-sizing: border-box; }
 
 details[open] summary {
   width: initial;
   width: 100%;
   width: calc(100% - 5px - 5px); }
+
+details:not([open]) summary {
+  transition: all .5s linear; }
 
 .lit-lay {
   color: #aaa;
