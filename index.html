@@ -79,6 +79,13 @@
 				}
 			]
 		</div> -->
+		<details>
+			<summary>code</summary>
+			<div class="ace-plug-js">
+				var url = new URL("https://someUser:Pass1234@developer.mozilla.org:443/en-US/search?a=1&b=2#search-results");
+				console.log(url);
+			</div>
+		</details>
 		<div class="lit-lay" data-line-num="81">
 			[
 				{
@@ -151,15 +158,15 @@
 				}
 			]
 		</div>
+		<br>
+
 		<details>
 			<summary>code</summary>
 			<div class="ace-plug-js">
-				var url = new URL("https://someUser:Pass1234@developer.mozilla.org:443/en-US/search?a=1&b=2#search-results");
+				var url = new URL("file:///D:/folder/folder/file.js?a=1&b=2#search-results");
 				console.log(url);
 			</div>
 		</details>
-		<br>
-
 		<div class="lit-lay" data-line-num="161">
 			[
 				{
@@ -193,18 +200,35 @@
 				}
 			]
 		</div>
-		<details>
-			<summary>code</summary>
-			<div class="ace-plug-js">
-				var url = new URL("file:///D:/folder/folder/file.js?a=1&b=2#search-results");
-				console.log(url);
-			</div>
-		</details>
 		<br>
 		
 
 		<h3>URLs in NodeJS</h3>
 		<h4>Legacy API</h4>
+		<details>
+			<summary>code</summary>
+			<div class="ace-plug-js">
+				var url_ = url.parse("https://someUser:Pass1234@developer.mozilla.org:443/en-US/search?a=1&b=2#search-results")
+				console.log(url_);
+
+				/*
+				Url {
+				  protocol: 'https:',
+				  slashes: true,
+				  auth: 'someUser:Pass1234',
+				  host: 'developer.mozilla.org:443',
+				  port: '443',
+				  hostname: 'developer.mozilla.org',
+				  hash: '#search-results',
+				  search: '?a=1&b=2',
+				  query: 'a=1&b=2',
+				  pathname: '/en-US/search',
+				  path: '/en-US/search?a=1&b=2',
+				  href: 'https://someUser:Pass1234@developer.mozilla.org:443/en-US/search?a=1&b=2#search-results'
+				}
+				*/
+			</div>
+		</details>
 		<div class="lit-lay" data-line-num="207">
 			[
 				{
@@ -269,33 +293,33 @@
 				}
 			]
 		</div>
-		<details>
-			<summary>code</summary>
-			<div class="ace-plug-js">
-				var url_ = url.parse("https://someUser:Pass1234@developer.mozilla.org:443/en-US/search?a=1&b=2#search-results")
-				console.log(url_);
-
-				/*
-				Url {
-				  protocol: 'https:',
-				  slashes: true,
-				  auth: 'someUser:Pass1234',
-				  host: 'developer.mozilla.org:443',
-				  port: '443',
-				  hostname: 'developer.mozilla.org',
-				  hash: '#search-results',
-				  search: '?a=1&b=2',
-				  query: 'a=1&b=2',
-				  pathname: '/en-US/search',
-				  path: '/en-US/search?a=1&b=2',
-				  href: 'https://someUser:Pass1234@developer.mozilla.org:443/en-US/search?a=1&b=2#search-results'
-				}
-				*/
-			</div>
-		</details>
 		<br>
 
 		<h4>WHATWG API</h4>
+		<details>
+			<summary>code</summary>
+			<div class="ace-plug-js">
+				var url_ = new URL("https://someUser:Pass1234@developer.mozilla.org:443/en-US/search?a=1&b=2#search-results");
+				console.log(url_);
+
+				/*
+				{
+				  href: 'https://someUser:Pass1234@developer.mozilla.org/en-US/search?a=1&b=2#search-results',
+				  origin: 'https://developer.mozilla.org',
+				  protocol: 'https:',
+				  username: 'someUser',
+				  password: 'Pass1234',
+				  host: 'developer.mozilla.org',
+				  hostname: 'developer.mozilla.org',
+				  port: '',
+				  pathname: '/en-US/search',
+				  search: '?a=1&b=2',
+				  searchParams: URLSearchParams { 'a' => '1', 'b' => '2' },
+				  hash: '#search-results'
+				}
+				 */
+			</div>
+		</details>
 		<div class="lit-lay" data-line-num="81">
 			[
 				{
@@ -394,22 +418,24 @@
 				}
 			]
 		</div>
+		<br>
+
 		<details>
 			<summary>code</summary>
 			<div class="ace-plug-js">
-				var url_ = new URL("https://someUser:Pass1234@developer.mozilla.org:443/en-US/search?a=1&b=2#search-results");
+				var url_ = new URL("https://someUser:Pass1234@developer.mozilla.org:8080/en-US/search?a=1&b=2#search-results");
 				console.log(url_);
 
 				/*
 				{
-				  href: 'https://someUser:Pass1234@developer.mozilla.org/en-US/search?a=1&b=2#search-results',
-				  origin: 'https://developer.mozilla.org',
+				  href: 'https://someUser:Pass1234@developer.mozilla.org:8080/en-US/search?a=1&b=2#search-results',
+				  origin: 'https://developer.mozilla.org:8080',
 				  protocol: 'https:',
 				  username: 'someUser',
 				  password: 'Pass1234',
-				  host: 'developer.mozilla.org',
+				  host: 'developer.mozilla.org:8080',
 				  hostname: 'developer.mozilla.org',
-				  port: '',
+				  port: '8080',
 				  pathname: '/en-US/search',
 				  search: '?a=1&b=2',
 				  searchParams: URLSearchParams { 'a' => '1', 'b' => '2' },
@@ -418,7 +444,6 @@
 				 */
 			</div>
 		</details>
-		<br>
 		<div class="lit-lay" data-line-num="81">
 			[
 				{
@@ -517,35 +542,24 @@
 				}
 			]
 		</div>
-		<details>
-			<summary>code</summary>
-			<div class="ace-plug-js">
-				var url_ = new URL("https://someUser:Pass1234@developer.mozilla.org:8080/en-US/search?a=1&b=2#search-results");
-				console.log(url_);
-
-				/*
-				{
-				  href: 'https://someUser:Pass1234@developer.mozilla.org:8080/en-US/search?a=1&b=2#search-results',
-				  origin: 'https://developer.mozilla.org:8080',
-				  protocol: 'https:',
-				  username: 'someUser',
-				  password: 'Pass1234',
-				  host: 'developer.mozilla.org:8080',
-				  hostname: 'developer.mozilla.org',
-				  port: '8080',
-				  pathname: '/en-US/search',
-				  search: '?a=1&b=2',
-				  searchParams: URLSearchParams { 'a' => '1', 'b' => '2' },
-				  hash: '#search-results'
-				}
-				 */
-			</div>
-		</details>
 		<br>
 		
 
 
 		<h2>PHP pathinfo()</h2>
+		<details>
+			<summary>code</summary>
+			<div class="ace-plug-php">
+				&lt;?php
+					$path_parts = pathinfo('/www/htdocs/inc/lib.inc.php');
+
+					echo $path_parts['dirname'  ], "\n";
+					echo $path_parts['basename' ], "\n";
+					echo $path_parts['extension'], "\n";
+					echo $path_parts['filename' ], "\n";
+				?&gt;
+			</div>
+		</details>
 		<div class="lit-lay">
 			[
 				{
@@ -574,24 +588,21 @@
 				}
 			]
 		</div>
-		<details>
-			<summary>code</summary>
-			<div class="ace-plug-php">
-				&lt;?php
-				$path_parts = pathinfo('/www/htdocs/inc/lib.inc.php');
-
-				echo $path_parts['dirname'], "\n";
-				echo $path_parts['basename'], "\n";
-				echo $path_parts['extension'], "\n";
-				echo $path_parts['filename'], "\n";
-				?&gt;
-			</div>
-		</details>
 		<br>
 		
 
 
 		<h2>NodeJS path.&lt;...&gt;()</h2>
+		<details>
+			<summary>code</summary>
+			<div class="ace-plug-js">
+				console.log(
+					path.dirname ("/www/htdocs/inc/lib.inc.php"), "\n",  // "/www/htdocs/inc"
+					path.basename("/www/htdocs/inc/lib.inc.php"), "\n",  // "lib.inc.php"
+					path.extname ("/www/htdocs/inc/lib.inc.php"), "\n"   // ".php"
+				);
+			</div>
+		</details>
 		<div class="lit-lay">
 			[
 				{
@@ -616,21 +627,42 @@
 				}
 			]
 		</div>
-		<details>
-			<summary>code</summary>
-			<div class="ace-plug-js">
-				console.log(
-					path.dirname ("/www/htdocs/inc/lib.inc.php"), "\n",  // "/www/htdocs/inc"
-					path.basename("/www/htdocs/inc/lib.inc.php"), "\n",  // "lib.inc.php"
-					path.extname ("/www/htdocs/inc/lib.inc.php"), "\n"   // ".php"
-				);
-			</div>
-		</details>
 		<br>
 		
 
 
 		<h2>NodeJS path.parse()</h2>
+		<details>
+			<summary>code</summary>
+			<div class="ace-plug-js">
+				var myPath = path.parse("/www/htdocs/inc/lib.inc.php");
+				console.log(myPath);
+
+				/*
+				{
+				  root: '/',
+				  dir: '/www/htdocs/inc',
+				  base: 'lib.inc.php',
+				  ext: '.php',
+				  name: 'lib.inc'
+				}
+				 */
+			</div>
+			<div class="ace-plug-js">
+				var myPath = path.parse("D:\\GitHub-my\\ace-plug-kit\\templates.html");
+				console.log(myPath);
+
+				/*
+				{
+				  root: 'D:\\',
+				  dir: 'D:\\GitHub-my\\ace-plug-kit',
+				  base: 'templates.html',
+				  ext: '.html',
+				  name: 'templates'
+				}
+				 */
+			</div>
+		</details>
 		<div class="lit-lay" style="display: inline-block;">
 			[
 				{
@@ -700,37 +732,6 @@
 				}
 			]
 		</div>
-		<details>
-			<summary>code</summary>
-			<div class="ace-plug-js">
-				var myPath = path.parse("/www/htdocs/inc/lib.inc.php");
-				console.log(myPath);
-
-				/*
-				{
-				  root: '/',
-				  dir: '/www/htdocs/inc',
-				  base: 'lib.inc.php',
-				  ext: '.php',
-				  name: 'lib.inc'
-				}
-				 */
-			</div>
-			<div class="ace-plug-js">
-				var myPath = path.parse("D:\\GitHub-my\\ace-plug-kit\\templates.html");
-				console.log(myPath);
-
-				/*
-				{
-				  root: 'D:\\',
-				  dir: 'D:\\GitHub-my\\ace-plug-kit',
-				  base: 'templates.html',
-				  ext: '.html',
-				  name: 'templates'
-				}
-				 */
-			</div>
-		</details>
 		<br>
 	</div>
 	<script type="text/javascript">
