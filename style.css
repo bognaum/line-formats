@@ -18,9 +18,6 @@ details[open] summary {
   width: 100%;
   width: calc(100% - 5px - 5px); }
 
-details:not([open]) summary {
-  transition: all .5s linear; }
-
 .lit-lay {
   color: #aaa;
   margin: 5px;

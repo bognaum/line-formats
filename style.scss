@@ -35,7 +35,7 @@ details[open] {
 
 details:not([open]) {
 	summary {
-		transition: all .5s linear;
+		// transition: all .5s linear;
 	}
 }
 
