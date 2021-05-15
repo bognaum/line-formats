@@ -545,6 +545,123 @@
 		</div>
 		
 
+		<h2>PHP</h2>
+
+		<h3>PHP $_SERVER</h3>
+
+		<div id="d33" class="lit-lay" 
+			data-line-num="551">
+			[
+				{
+					"ch": "http://",
+					"style": "color: #aaa;"
+				},
+				{
+					"td": "HTTP_HOST",
+					"ch": [
+						{
+							"td": "SERVER_NAME",
+							"ch": "some-site"
+						}
+					]
+				},
+				{
+					"td": "REQUEST_URI",
+					"ch": [
+						{
+							"td": "SCRIPT_NAME",
+							"ch": [
+								{
+									"td": "PHP_SELF",
+									"ch": [
+										{
+											"bd": "dirname($_SERVER['PHP_SELF'])",
+											"ch": "/A/B/C/"
+										},
+										{
+											"bd": "basename($_SERVER['PHP_SELF'])",
+											"ch": "page.php"
+										}
+									]
+								}
+							]
+						},
+						{
+							"ch": "?"
+						},
+						{
+							"td": "QUERY_STRING",
+							"ch": "v1=some%20value&v2=other%20value&v3=abcdef&"
+						}
+					]
+				},
+				{
+					"ch": "#link_to_id",
+					"style": "color: #aaa;"
+				}
+			]
+		</div>
+		<div class="lit-lay" 
+			data-line-num="603">
+			[
+				{
+					"td": "SCRIPT_FILENAME",
+					"ch": [
+						{
+							<!-- "td": "__DIR__", -->
+							"ch": [
+								{
+									"td": "DOCUMENT_ROOT",
+									"ch": "W:/domains/some-site/www"
+								},
+								{
+									"ch": "/A/B/C"
+								}
+							]
+						},
+						{
+							"ch": "/"
+						},
+						{
+							"ch": "page.php"
+							<!-- "bd": "basename(__FILE__)" -->
+						}
+					]
+				}
+			]
+		</div>
+
+		<h3>PHP parts of path</h3>
+		<div class="lit-lay" 
+			data-line-num="634">
+			[
+				{
+					"td": "__FILE__",
+					"ch": [
+						{
+							"td": "dirname, __DIR__",
+							"ch": "W:/domains/some-site/www/A/B/C"
+						},
+						{"ch": "/"},
+						{
+							"td": "basename",
+							"ch": [
+								{
+									"ch": "page",
+									"bd": "filename"
+								},
+								{"ch": "."},
+								{
+									"ch": "php",
+									"bd": "extension"
+								}
+							]
+						}
+					]
+				}
+			]
+		</div>
+
 
 		<h2>PHP pathinfo()</h2>
 		<details>
