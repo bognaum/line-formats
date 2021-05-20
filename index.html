@@ -523,7 +523,7 @@
 									"ch": [
 										{
 											"bd": "dirname($_SERVER['PHP_SELF'])",
-											"ch": "/A/B/C/"
+											"ch": "/a/b/c/"
 										},
 										{
 											"bd": "basename($_SERVER['PHP_SELF'])",
@@ -538,7 +538,52 @@
 						},
 						{
 							"td": "QUERY_STRING",
-							"ch": "v1=some%20value&v2=other%20value&v3=abcdef&"
+							"ch": [
+								{
+									"td": "Arrays $_GET, $_POST, $_REQUEST",
+									"ch": [
+										{
+											"ch": "v1"
+										},
+										{
+											"ch": "="
+										},
+										{
+											"ch": "some%20value",
+											"bd": "$_REQUEST['v1']\n$_GET['v1']\n$_POST['v1']"
+										},
+										{
+											"ch": "&"
+										},
+										{
+											"ch": "v2"
+										},
+										{
+											"ch": "="
+										},
+										{
+											"ch": "other%20value",
+											"bd": "$_REQUEST['v2']\n$_GET['v2']\n$_POST['v2']"
+										},
+										{
+											"ch": "&"
+										},
+										{
+											"ch": "v3"
+										},
+										{
+											"ch": "="
+										},
+										{
+											"ch": "abcdef",
+											"bd": "$_REQUEST['v3']\n$_GET['v3']\n$_POST['v3']"
+										},
+										{
+											"ch": "&"
+										}
+									]
+								}
+							]
 						}
 					]
 				},
