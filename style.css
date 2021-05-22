@@ -18,23 +18,23 @@ details[open] summary {
   width: 100%;
   width: calc(100% - 5px - 5px); }
 
-.lit-lay {
+.lfd {
   color: #aaa;
   margin: 5px;
   padding: 5px; }
-  .lit-lay .lit-lay-part .lit-lay-line-text {
+  .lfd .lfd-part .lfd-line-text {
     color: #2ba;
     font-size: 20px; }
-  .lit-lay .lit-lay-part.red-descr .lit-lay-h-line.red-descr {
+  .lfd .lfd-part.red-descr .lfd-h-line.red-descr {
     border-color: #f88; }
-  .lit-lay .lit-lay-part.red-descr .lit-lay-td-block.red-descr {
+  .lfd .lfd-part.red-descr .lfd-td-block.red-descr {
     color: #f88; }
-  .lit-lay .lit-lay-part.red-content .lit-lay-line-text {
+  .lfd .lfd-part.red-content .lfd-line-text {
     color: #f88; }
 
-.lit-lay {
+.lfd {
   filter: blur(10px); }
-  .lit-lay.executing, .lit-lay.executed {
+  .lfd.executing, .lfd.executed {
     filter: none; }
 
 .ace-plug-kit__code-wrapper {

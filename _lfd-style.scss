@@ -1,30 +1,30 @@
-.lit-lay {
+.lfd {
 	color: $main_c;
 	margin: 5px;
 	padding: 5px;
 	
-	.lit-lay-part {
-		.lit-lay-line-text {
+	.lfd-part {
+		.lfd-line-text {
 			color: $green;
 			font-size: 20px;
 		}
 	}
-	.lit-lay-part.red-descr {
-		.lit-lay-h-line.red-descr {
+	.lfd-part.red-descr {
+		.lfd-h-line.red-descr {
 			border-color: $red;
 		}
-		.lit-lay-td-block.red-descr {
+		.lfd-td-block.red-descr {
 			color: $red;
 		}
 	}
-	.lit-lay-part.red-content {
-		.lit-lay-line-text {
+	.lfd-part.red-content {
+		.lfd-line-text {
 			color: $red;
 		}
 	}
 }
 
-.lit-lay {
+.lfd {
 	filter: blur(10px);
 	&.executing,
 	&.executed {
