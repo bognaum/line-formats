@@ -1,9 +1,11 @@
 body {
   color: #aaa;
-  background-color: #222; }
-  body > .container {
-    margin: 10px 100px 500px 100px;
-    font-family: verdana, arial, sans-serif; }
+  background-color: #222;
+}
+body > .container {
+  margin: 10px 100px 500px 100px;
+  font-family: verdana, arial, sans-serif;
+}
 
 details summary {
   cursor: pointer;
@@ -11,33 +13,45 @@ details summary {
   padding: 2px 20px;
   border-bottom: 1px solid #aaa;
   width: 100px;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 details[open] summary {
   width: initial;
   width: 100%;
-  width: calc(100% - 5px - 5px); }
+  width: calc(100% - 5px - 5px);
+}
 
-.lfd {
+div.lfd {
   color: #aaa;
   margin: 5px;
-  padding: 5px; }
-  .lfd .lfd-part .lfd-line-text {
-    color: #2ba;
-    font-size: 20px; }
-  .lfd .lfd-part.red-descr .lfd-h-line.red-descr {
-    border-color: #f88; }
-  .lfd .lfd-part.red-descr .lfd-td-block.red-descr {
-    color: #f88; }
-  .lfd .lfd-part.red-content .lfd-line-text {
-    color: #f88; }
+  padding: 5px;
+}
+div.lfd .lfd-part .lfd-line-text {
+  color: #2ba;
+  font-size: 20px;
+}
+div.lfd .lfd-part.red-descr .lfd-h-line.red-descr {
+  border-color: #f88;
+}
+div.lfd .lfd-part.red-descr .lfd-td-block.red-descr {
+  color: #f88;
+}
+div.lfd .lfd-part.red-content .lfd-line-text {
+  color: #f88;
+}
 
 .lfd {
-  filter: blur(10px); }
-  .lfd.executing, .lfd.executed {
-    filter: none; }
+  filter: blur(10px);
+}
+.lfd.executing, .lfd.executed {
+  filter: none;
+}
+
+.lfd-edit .lfd {
+  filter: none;
+}
 
 .ace-plug-kit__code-wrapper {
-  border-color: #aaa; }
-
-/*# sourceMappingURL=style.css.map */
+  border-color: #aaa;
+}/*# sourceMappingURL=style.css.map */

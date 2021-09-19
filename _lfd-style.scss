@@ -1,4 +1,4 @@
-.lfd {
+div.lfd {
 	color: $main_c;
 	margin: 5px;
 	padding: 5px;
@@ -28,6 +28,11 @@
 	filter: blur(10px);
 	&.executing,
 	&.executed {
+		filter: none;
+	}
+}
+.lfd-edit {
+	.lfd {
 		filter: none;
 	}
 }

@@ -844,6 +844,93 @@
 				}
 			]
 		</div>
+		 
+		<h2>CSS</h2>
+		<h3>Background</h3>
+		<div class="lfd bottom-lines"
+			data-style="
+				font-size: 14px;
+			"
+			data-line-num="848">
+			[
+				{
+					"ch": "background: "
+				},
+				{
+					"td": "В любой последовательности:",
+					"ch": [
+						{
+							"td": "-image: ",
+							"ch": "url('/bg_1.png')"
+						},
+						{
+							"ch": " "
+						},
+						{
+							"td": "-position / -size",
+							"ch": [
+								{
+									"td": "-position: ",
+									"bd": "  : left;             (def)\n  : right; \n  : center; \n  : top;             (def)\n  : bottom; \n  : Npx; (Xpx Ypx;) \n  : N%; (X% Y%;) \n and combinations ...",
+									"ch": "right bottom"
+								},
+								{
+									"ch": "/"
+								},
+								{
+									"td": "-size: ",
+									"bd": "  : auto;           (def)\n  : cover;\n  : contain;\n  : Npx; (Xpx Ypx;) \n  : N%; (X% Y%;) \n and combinations ...",
+									"ch": "auto 80%"
+								}
+							]
+						},
+						{
+							"ch": " "
+						},
+						{
+							"td": "-repeat: ",
+							"bd": "  : repeat;   (def) \n  : repeat-x; \n  : repeat-y; \n  : space; \n  : round; \n  : no-repeat; ",
+							"ch": "no-repeat"
+						},
+						{
+							"ch": " "
+						},
+						{
+							"td": "-origin: ",
+							"bd": "  : padding-box;   (def) \n  : border-box; \n  : content-box;",
+							"ch": "border-box"
+						},
+						{
+							"ch": " "
+						},
+						{
+							"td": "-clip: ",
+							"bd": "  : border-box;   (def) \n  : padding-box; \n  : content-box; \n  : text; ",
+							"ch": "padding-box"
+						},
+						{
+							"ch": " "
+						},
+						{
+							"td": "-attachment: ",
+							"bd": "  : scroll;   (def)\n  : fixed; \n  : local;",
+							"ch": "scroll"
+						},
+						{
+							"ch": " "
+						},
+						{
+							"td": "-color:",
+							"ch": "#ffdddd"
+						}
+					]
+				},
+				{
+					"style": "color: #555; background-color: transparent;",
+					"ch": "; "
+				}
+			]
+		</div>
 	</div>
 	<script type="text/javascript">
 		// place at the bottom of the page
@@ -897,6 +984,9 @@
 		const lfd = new LFD("lfd");
 		document.querySelectorAll(".lfd").forEach((v) => {
 			lfd.buildByTextContent(v);
+		});
+		document.querySelectorAll(".lfd-edit").forEach((v) => {
+			lfd.edit(v);
 		});
 	</script>
 </body>
