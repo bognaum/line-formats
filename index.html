@@ -930,6 +930,447 @@
 				}
 			]
 		</div>
+
+		<h3>Transition</h3>
+		<div class="lfd bottom-lines" data-line-num="935">
+			{
+				"ch": [
+					{
+						"ch": "transition: "
+					},
+					{
+						"td": "-property",
+						"ch": "all",
+						"bd": "  : all \n  : none \n  : [prop-name]"
+					},
+					{
+						"ch": " "
+					},
+					{
+						"td": "-duration",
+						"ch": ".5s",
+						"bd": "  : ...s \n  : ...ms \n  : initial \n  : inherit"
+					},
+					{
+						"ch": " "
+					},
+					{
+						"td": "-timing-function",
+						"ch": "linear",
+						"bd": "  : ease     (default) \n  : linear  \n  : ease-in  \n  : ease-out  \n  : ease-in-out  \n  : cubic-bezier(x1, y1, x2, y2)  \n  : step-start  \n  : step-end  \n  : steps([count-of-steps],[start|end])  \n  : initial  \n  : inherit "
+					},
+					{
+						"ch": " "
+					},
+					{
+						"td": "-delay",
+						"ch": ".2s",
+						"bd": "  : ...s \n  : ...ms \n  : initial \n  : inherit"
+					},
+					{
+						"ch": ";"
+					}
+				]
+			}
+		</div>
+
+
+		
+		<h3>Animation</h3>
+		<div class="lfd bottom-lines" data-line-num="935">
+			[
+				{
+					"ch": "animation: "
+				},
+				{
+					"td": "All animations",
+					"ch": [
+						{
+							"td": "Animation #1",
+							"ch": [
+								{
+									"td": "-name:",
+									"ch": "shadow"
+								},
+								{
+									"ch": " "
+								},
+								{
+									"td": "-duration:",
+									"ch": "1s"
+								},
+								{
+									"ch": " "
+								},
+								{
+									"td": "-timing-function:",
+									"bd": "  : ease\n  : linear\n  : ease-in\n  : ease-out\n  : ease-in-out\n  : cubic-bezier(x1, y1, x2, y2)\n  : step-start\n  : steps(1, end)\n  : steps([count-of-steps] , [start|end])\n  : initial\n  : inherit",
+									"ch": "ease-in-out"
+								},
+								{
+									"ch": " "
+								},
+								{
+									"td": "-delay:",
+									"ch": "0.5s"
+								},
+								{
+									"ch": " "
+								},
+								{
+									"td": "-direction:",
+									"ch": "alternate"
+								}
+							]
+						},
+						{
+							"ch": ", "
+						},
+						{
+							"td": "Animation #2",
+							"ch": [
+								{
+									"ch": "move"
+								},
+								{
+									"ch": " "
+								},
+								{
+									"ch": "5s"
+								},
+								{
+									"ch": " "
+								},
+								{
+									"ch": "linear"
+								},
+								{
+									"ch": " "
+								},
+								{
+									"ch": "2s"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ch": ";"
+				}
+			]
+		</div>
+
+		<h3>Linear Gradient</h3>
+		<div class="lfd" data-line-num="935">
+			{
+				"ch": [
+					{
+						"ch": "background",
+						"bd": " - background \n - background-image \n - border-image \n - list-style-image"
+					},
+					{
+						"ch": ": "
+					},
+					{
+						"ch": "linear-gradient"
+					},
+					{
+						"ch": "("
+					},
+					{
+						"ch": "to top",
+						"bd": " - ...deg \n - to top           (as 0deg  ) \n - to top right \n - to right         (as 90deg ) \n - to bottom right \n - to bottom        (as 180deg) \n - to bottom left \n - to left          (as 270deg) \n - to top left"
+					},
+					{
+						"ch": ", "
+					},
+					{
+						"td": "color\n 1",
+						"ch": "#000"
+					},
+					{
+						"ch": ", "
+					},
+					{
+						"td": "color\n 2",
+						"ch": "#fff"
+					},
+					{
+						"ch": ", "
+					},
+					{
+						"ch": "..."
+					},
+					{
+						"ch": ", "
+					},
+					{
+						"ch": "#f00",
+						"td": "color\n n"
+					},
+					{
+						"ch": ");"
+					}
+				]
+			}
+		</div>
+		<div class="lfd" data-line-num="935">
+			{
+				"ch": [
+					{
+						"ch": "background",
+						"bd": " - background \n - background-image \n - border-image \n - list-style-image"
+					},
+					{
+						"ch": ": "
+					},
+					{
+						"ch": "linear-gradient",
+						"bd": " - linear-gradient \n - repeating-linear-gradient"
+					},
+					{
+						"ch": "("
+					},
+					{
+						"ch": "to top",
+						"bd": " - ...deg \n - to top           (as 0deg  ) \n - to top right \n - to right         (as 90deg ) \n - to bottom right \n - to bottom        (as 180deg) \n - to bottom left \n - to left          (as 270deg) \n - to top left"
+					},
+					{
+						"ch": ", "
+					},
+					{
+						"td": "point 1",
+						"ch": [
+							{
+								"td": "color\n 1",
+								"ch": "#000"
+							},
+							{
+								"ch": " "
+							},
+							{
+								"td": "offset\n 1",
+								"ch": "10%",
+								"bd": " - ...% \n - ...px \n - ...em \n\n from the start \n of the gradient "
+							}
+						]
+					},
+					{
+						"ch": ", "
+					},
+					{
+						"td": "point 2",
+						"ch": [
+							{
+								"td": "color\n 2",
+								"ch": "#fff"
+							},
+							{
+								"ch": " "
+							},
+							{
+								"td": "offset\n 2",
+								"ch": "20%",
+								"bd": " - ...% \n - ...px \n - ...em \n\n from the start \n of the gradient "
+							}
+						]
+					},
+					{
+						"ch": ", "
+					},
+					{
+						"ch": "..."
+					},
+					{
+						"ch": ", "
+					},
+					{
+						"td": "point n",
+						"ch": [
+							{
+								"ch": "#f00",
+								"td": "color\n n"
+							},
+							{
+								"ch": " "
+							},
+							{
+								"td": "offset\n n",
+								"ch": "100%",
+								"bd": " - ...% \n - ...px \n - ...em \n\n from the start \n of the gradient "
+							}
+						]
+					},
+					{
+						"ch": ");"
+					}
+				]
+			}
+		</div>
+
+		<h3>Radial gradient</h3>
+		<div class="lfd" data-line-num="935">
+			{
+				"ch": [
+					{
+						"ch": "background",
+						"bd": " - background \n - background-image \n - border-image \n - list-style-image"
+					},
+					{
+						"ch": ": "
+					},
+					{
+						"ch": "radial-gradient"
+					},
+					{
+						"ch": "("
+					},
+					{
+						"td": "color\n 1",
+						"ch": "white"
+					},
+					{
+						"ch": ", "
+					},
+					{
+						"td": "color\n 2",
+						"ch": "#FFA9A1"
+					},
+					{
+						"ch": ");"
+					}
+				]
+			}
+		</div>
+		<div class="lfd" 
+			data-style="
+				font-size: 14px;
+			" 
+			data-line-num="935">
+			{
+				"ch": [
+					{
+						"ch": "background",
+						"bd": " - background \n - background-image \n - border-image \n - list-style-image"
+					},
+					{
+						"ch": ": "
+					},
+					{
+						"ch": "radial-gradient",
+						"bd": " - radial-gradient \n - repeating-radial-gradient"
+					},
+					{
+						"ch": "("
+					},
+					{
+						"td": "shape, size, position",
+						"ch": [
+							{
+								"ch": "circle",
+								"bd": " - circle \n - ellipse",
+								"td": "shape"
+							},
+							{
+								"ch": " "
+							},
+							{
+								"td": "size",
+								"ch": "farthest-corner",
+								"bd": " - closest-side \n - farthest-side \n - closest-corner \n - farthest-corner"
+							},
+							{
+								"ch": " "
+							},
+							{
+								"ch": [
+									{
+										"ch": "at "
+									},
+									{
+										"td": "X",
+										"ch": "100px",
+										"bd": " - left \n - right \n - center \n - ...px \n - ...% \n - ...em"
+									},
+									{
+										"ch": " "
+									},
+									{
+										"td": "Y",
+										"ch": "50px",
+										"bd": " - top \n - bottom \n - center \n - ...px \n - ...% \n - ...em"
+									}
+								],
+								"td": "position"
+							}
+						]
+					},
+					{
+						"ch": ", "
+					},
+					{
+						"td": "point 1",
+						"ch": [
+							{
+								"td": "color",
+								"ch": "#FBF"
+							},
+							{
+								"ch": " "
+							},
+							{
+								"td": "offset",
+								"ch": "10px",
+								"bd": " - ...% \n - ...px \n - ...em \n\n from the start \n of the gradient "
+							}
+						]
+					},
+					{
+						"ch": ", "
+					},
+					{
+						"td": "point 2",
+						"ch": [
+							{
+								"td": "color",
+								"ch": "#352"
+							},
+							{
+								"ch": " "
+							},
+							{
+								"td": "offset",
+								"ch": "20px",
+								"bd": " - ...% \n - ...px \n - ...em \n\n from the start \n of the gradient "
+							}
+						]
+					},
+					{
+						"ch": ", ..., "
+					},
+					{
+						"td": "point n",
+						"ch": [
+							{
+								"td": "color",
+								"ch": "#ABC"
+							},
+							{
+								"ch": " "
+							},
+							{
+								"td": "offset",
+								"ch": "30px",
+								"bd": " - ...% \n - ...px \n - ...em \n\n from the start \n of the gradient "
+							}
+						]
+					},
+					{
+						"ch": ");"
+					}
+				]
+			}
+		</div>
 	</div>
 	<script type="text/javascript">
 		// place at the bottom of the page
