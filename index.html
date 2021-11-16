@@ -500,101 +500,103 @@
 
 		<div class="lfd" 
 			data-line-num="502">
-			[
 				{
-					"ch": "http://",
-					"style": "color: #aaa;"
-				},
-				{
-					"td": "HTTP_HOST",
 					"ch": [
 						{
-							"td": "SERVER_NAME",
-							"ch": "some-site"
-						}
-					]
-				},
-				{
-					"td": "REQUEST_URI",
-					"ch": [
+							"ch": "http://",
+							"style": "color: #aaa;"
+						},
 						{
-							"td": "SCRIPT_NAME",
+							"td": "HTTP_HOST",
 							"ch": [
 								{
-									"td": "PHP_SELF",
+									"td": "SERVER_NAME",
+									"ch": "some-site"
+								}
+							]
+						},
+						{
+							"td": "REQUEST_URI",
+							"ch": [
+								{
+									"td": "SCRIPT_NAME",
 									"ch": [
 										{
-											"bd": "dirname($_SERVER['PHP_SELF'])",
-											"ch": "/a/b/c/"
-										},
+											"td": "PHP_SELF",
+											"ch": [
+												{
+													"bd": "dirname($_SERVER['PHP_SELF'])",
+													"ch": "/a/b/c/"
+												},
+												{
+													"bd": "basename($_SERVER['PHP_SELF'])",
+													"ch": "page.php"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ch": "?"
+								},
+								{
+									"td": "QUERY_STRING",
+									"ch": [
 										{
-											"bd": "basename($_SERVER['PHP_SELF'])",
-											"ch": "page.php"
+											"td": "Arrays $_GET, $_POST, $_REQUEST",
+											"ch": [
+												{
+													"ch": "v1"
+												},
+												{
+													"ch": "="
+												},
+												{
+													"ch": "some%20value",
+													"bd": "    $_GET['v1']\n   $_POST['v1']\n$_REQUEST['v1']"
+												},
+												{
+													"ch": "&"
+												},
+												{
+													"ch": "v2"
+												},
+												{
+													"ch": "="
+												},
+												{
+													"ch": "other%20value",
+													"bd": "    $_GET['v2']\n   $_POST['v2']\n$_REQUEST['v2']"
+												},
+												{
+													"ch": "&"
+												},
+												{
+													"ch": "v3"
+												},
+												{
+													"ch": "="
+												},
+												{
+													"ch": "abcdef",
+													"bd": "    $_GET['v3']\n   $_POST['v3']\n$_REQUEST['v3']"
+												},
+												{
+													"ch": "&"
+												}
+											]
 										}
 									]
 								}
 							]
 						},
 						{
-							"ch": "?"
-						},
-						{
-							"td": "QUERY_STRING",
-							"ch": [
-								{
-									"td": "Arrays $_GET, $_POST, $_REQUEST",
-									"ch": [
-										{
-											"ch": "v1"
-										},
-										{
-											"ch": "="
-										},
-										{
-											"ch": "some%20value",
-											"bd": "$_REQUEST['v1']\n$_GET['v1']\n$_POST['v1']"
-										},
-										{
-											"ch": "&"
-										},
-										{
-											"ch": "v2"
-										},
-										{
-											"ch": "="
-										},
-										{
-											"ch": "other%20value",
-											"bd": "$_REQUEST['v2']\n$_GET['v2']\n$_POST['v2']"
-										},
-										{
-											"ch": "&"
-										},
-										{
-											"ch": "v3"
-										},
-										{
-											"ch": "="
-										},
-										{
-											"ch": "abcdef",
-											"bd": "$_REQUEST['v3']\n$_GET['v3']\n$_POST['v3']"
-										},
-										{
-											"ch": "&"
-										}
-									]
-								}
-							]
+							"ch": "#link_to_id",
+							"style": "color: #aaa;"
 						}
 					]
-				},
-				{
-					"ch": "#link_to_id",
-					"style": "color: #aaa;"
 				}
-			]
-		</div>
+			</div>
 		<div class="lfd" 
 			data-line-num="599">
 			[
