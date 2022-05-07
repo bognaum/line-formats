@@ -54,4 +54,41 @@ div.lfd .lfd-part.red-content .lfd-line-text {
 
 .ace-plug-kit__code-wrapper {
   border-color: #aaa;
+}
+
+code {
+  color: #0a8;
+  padding-left: 10px;
+  padding-right: 10px;
+  white-space: nowrap;
+  white-space: pre;
+  font-family: consolas;
+  text-shadow: 0 0 2px #08a;
+}
+code span.opt {
+  color: #aaa;
+  text-shadow: 0 0 2px #aaa;
+}
+code span.opt:before {
+  content: " [";
+}
+code span.opt:after {
+  content: "]";
+}
+code span.meta {
+  color: #aaa;
+  font-family: courier;
+  text-shadow: none;
+}
+code span.meta.cb:before, code span.meta.corner:before {
+  content: "<";
+}
+code span.meta.cb:after, code span.meta.corner:after {
+  content: ">";
+}
+code span.meta.sb:before, code span.meta.sqare:before {
+  content: "[";
+}
+code span.meta.sb:after, code span.meta.sqare:after {
+  content: "]";
 }/*# sourceMappingURL=style.css.map */

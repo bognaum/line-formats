@@ -44,3 +44,53 @@ details:not([open]) {
 .ace-plug-kit__code-wrapper {
 	border-color: $main_c;
 }
+
+code{
+	color: #0a8;
+	padding-left: 10px;
+	padding-right: 10px;
+	white-space: nowrap;
+	white-space: pre;
+	// background-color: #f7f7ff;
+	font-family: consolas;
+	text-shadow: 0 0 2px #08a;
+	span.opt{
+		color: #aaa;
+		text-shadow: 0 0 2px #aaa;
+		&:before{
+			content: " [";
+		}
+		&:after{
+			content: "]";
+		}
+		&:before,
+		&:after{}
+	}
+	span.meta {
+		color: #aaa;
+		font-family: courier;
+		text-shadow: none;
+		&:before{}
+		&:after{}
+		
+		
+		&.cb,
+		&.corner {
+			&:before{
+				content: "<";
+			}
+			&:after{
+				content: ">";
+			}
+		}
+		&.sb,
+		&.sqare {
+			&:before{
+				content: "[";
+			}
+			&:after{
+				content: "]";
+			}
+		}
+	}
+}
