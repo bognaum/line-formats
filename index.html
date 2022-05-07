@@ -1412,6 +1412,10 @@
 					{
 						"ch": ";"
 					}
+					]
+				}
+		</div>
+
 		<h3>font-weight:</h3>
 		<div class="lfd">
 			{
@@ -1429,6 +1433,163 @@
 				]
 			}
 		</div>
+
+		<h3>@font-face</h3>
+		<div class="lfd"
+			data-style="
+				font-size: 17px;
+			"
+		>
+			{
+				"ch": [
+					{
+						"ch": "@font-face{font-family: \""
+					},
+					{
+						"ch": "...",
+						"bd": "Setted the \"font-family:\" property"
+					},
+					{
+						"ch": "\"; src: "
+					},
+					{
+						"ch": "...",
+						"bd": "Setted the alternative sources "
+					},
+					{
+						"ch": "; font-weight: "
+					},
+					{
+						"ch": "...",
+						"bd": " - 100 - thin\n - 200 - UltraLite\n - 300 - lighter\n - 400 - normal\n - 500 - medium\n - 600 - semibold\n - 700 - bold\n - 800 - Heavy\n - 900 - black"
+					},
+					{
+						"ch": "; font-style: "
+					},
+					{
+						"ch": "...",
+						"bd": " - normal\n - italic"
+					},
+					{
+						"ch": "; font-display: "
+					},
+					{
+						"ch": "...",
+						"bd": " - auto\n - block\n - swap\n - fallback\n - optional"
+					},
+					{
+						"ch": ";}"
+					}
+				]
+			}
+		</div>
+		<h4>@font-face src:</h4>
+		<div class="lfd"
+			data-style="
+				font-size: 17px;
+			"
+		>
+			{
+				"ch": [
+					{
+						"ch": "src: "
+					},
+					{
+						"td": "Variant 1\n(local existed)",
+						"ch": [
+							{
+								"ch": "local(\""
+							},
+							{
+								"ch": "existed-font",
+								"bd": "The name of lokal existed font (if exists)."
+							},
+							{
+								"ch": "\")"
+							}
+						]
+					},
+					{
+						"ch": ", "
+					},
+					{
+						"td": "Variant 2\n(loaded)",
+						"ch": [
+							{
+								"ch": "url(\""
+							},
+							{
+								"ch": "myfont.woff",
+								"bd": "the URL"
+							},
+							{
+								"ch": [
+									{
+										"ch": "\") format(\""
+									},
+									{
+										"ch": "woff",
+										"bd": " - truetype\n - opentype\n - eot\n - woff\n - woff2\n - svg"
+									},
+									{
+										"ch": "\")"
+									}
+								]
+							}
+						]
+					},
+					{
+						"ch": ", "
+					},
+					{
+						"td": "Variant 3\n(loaded)",
+						"ch": [
+							{
+								"ch": "url(\"myfont.eot"
+							},
+							{
+								"ch": "?",
+								"bd": "to avoid a bug to IE8+"
+							},
+							{
+								"ch": "\") format(\"eot\")"
+							}
+						]
+					},
+					{
+						"ch": ", "
+					},
+					{
+						"td": "Variant 4",
+						"ch": "..."
+					},
+					{
+						"ch": ";"
+					}
+				]
+			}
+		</div>
+		<h4>@font-face font-weight:  font-style:</h4>
+		<div class="lfd">
+			{
+				"ch": [
+					{
+						"ch": "@font-face{ ...; font-weight: "
+					},
+					{
+						"ch": "bold",
+						"bd": " - 100 - thin\n - 200 - UltraLite\n - 300 - lighter\n - 400 - normal\n - 500 - medium\n - 600 - semibold\n - 700 - bold\n - 800 - Heavy\n - 900 - black"
+					},
+					{
+						"ch": "; font-style: "
+					},
+					{
+						"ch": "italic",
+						"bd": " - normal\n - italic"
+					},
+					{
+						"ch": "; ... }"
+					}
 				]
 			}
 		</div>
