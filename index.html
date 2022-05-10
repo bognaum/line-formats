@@ -846,6 +846,191 @@
 				}
 			]
 		</div>
+
+		<h2>JS</h2>
+		<style>
+			.lfd-line-text.selected-substring {
+				/* background: repeating-linear-gradient(
+					135deg, 
+					#444        0, 
+					#444        10px, 
+					transparent 10px, 
+					transparent 20px
+				); */
+				background: #444;
+				text-shadow: 
+					0 0 1px #2ba,
+					0 0 1px #2ba,
+					0 0 1px #2ba,
+					0 0 1px #2ba,
+					0 0 1px #2ba;
+			}
+		</style>
+		<h3>str.slice()</h3>
+		<ol>
+			<li>
+				<p><code>str.slice(begin, end)</code></p>
+				
+				<div class="lfd">
+					{
+						"ch": [
+							{
+								"td": "begin (+)",
+								"ch": "Lorem ipsum "
+							},
+							{
+								"td": "begin (-)",
+								"ch": [
+									{
+										"td": "end (+)",
+										"class": "selected-substring",
+										"ch": "dolor sit"
+									},
+									{
+										"td": "end (-)",
+										"ch": ", amet consectetur adipisicing elit. Aliquam, harum!"
+									}
+								]
+							}
+						]
+					}
+				</div>
+			</li>
+			<li>
+				<p><code>str.slice(begin)</code></p>
+				<div class="lfd">
+					{
+						"ch": [
+							{
+								"td": "begin (+)",
+								"ch": "Lorem ipsum "
+							},
+							{
+								"td": "begin (-)",
+								"ch": "dolor sit, amet consectetur adipisicing elit. Aliquam, harum!",
+								"class": "selected-substring"
+							}
+						]
+					}
+				</div>
+			</li>
+		</ol>
+
+		<h3>str.substr()</h3>
+		<ol>
+			<li>
+				<p><code>str.substr(begin, length)</code></p>
+				<div class="lfd">
+					{
+						"ch": [
+							{
+								"td": "begin (+)",
+								"ch": "Lorem ipsum "
+							},
+							{
+								"td": "begin (-)",
+								"ch": [
+									{
+										"td": "length (+)",
+										"class": "selected-substring",
+										"ch": "dolor sit"
+									},
+									{
+										"ch": ", amet consectetur adipisicing elit. Aliquam, harum!"
+									}
+								]
+							}
+						]
+					}
+				</div>
+			</li>
+			<li>
+				<p><code>str.substr(begin)</code></p>
+				<div class="lfd">
+					{
+						"ch": [
+							{
+								"td": "begin (+)",
+								"ch": "Lorem ipsum "
+							},
+							{
+								"td": "begin (-)",
+								"ch": "dolor sit, amet consectetur adipisicing elit. Aliquam, harum!",
+								"class": "selected-substring"
+							}
+						]
+					}
+				</div>
+			</li>
+		</ol>
+
+		<h3>str.substring()</h3>
+		<ol>
+			<li>
+				<p><code>str.substring(indexA, indexB)</code></p>
+				<div class="lfd">
+					{
+						"ch": [
+							{
+								"td": "indexB (+)",
+								"ch": [
+									{
+										"td": "indexA (+)",
+										"ch": "Lorem ipsum "
+									},
+									{
+										"class": "selected-substring",
+										"ch": "dolor sit"
+									}
+								]
+							},
+							{
+								"ch": ", amet consectetur adipisicing elit. Aliquam, harum!"
+							}
+						]
+					}
+				</div>
+				<div class="lfd">
+					{
+						"ch": [
+							{
+								"td": "indexA (+)",
+								"ch": [
+									{
+										"td": "indexB (+)",
+										"ch": "Lorem ipsum "
+									},
+									{
+										"class": "selected-substring",
+										"ch": "dolor sit"
+									}
+								]
+							},
+							{
+								"ch": ", amet consectetur adipisicing elit. Aliquam, harum!"
+							}
+						]
+					}
+				</div>
+			</li>
+			<li>
+				<p><code>str.substring(indexA)</code></p>
+				<div class="lfd">
+					{
+						"ch": [
+							{
+								"td": "indexA (+)",
+								"ch": "Lorem ipsum "
+							},
+							{
+								"class": "selected-substring",
+								"ch": "dolor sit, amet consectetur adipisicing elit. Aliquam, harum!"
+							}
+						]
+					}
+				</div>
+			</li>
+		</ol>
 		 
 		<h2>CSS</h2>
 		<h3>Background</h3>
