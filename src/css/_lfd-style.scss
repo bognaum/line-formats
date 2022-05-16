@@ -26,8 +26,8 @@ div.lfd {
 
 .lfd {
 	filter: blur(10px);
-	&.executing,
-	&.executed {
+	&.executed,
+	&.exec-error {
 		filter: none;
 	}
 }
