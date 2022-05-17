@@ -8,7 +8,7 @@ const
 		autoprefixer : require("gulp-autoprefixer"),
 		sourcemaps   : require("gulp-sourcemaps"),
 		rename       : require("gulp-rename"),
-		incl         : require("./gulp-plugins/gulp-html-by-parts"),
+		incl         : require("gulp-h-include"),
 	};
 
 const
