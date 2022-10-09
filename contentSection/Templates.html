@@ -1,0 +1,56 @@
+	<?php
+		$contentsSection_path = "http://MyPlugins/content/contentsSection/archive/v2.1.0/contentsSection";
+	?>
+	<link rel="stylesheet" type="text/css" href="<?= $contentsSection_path ?>/contentsSection.css">
+	<script type="text/javascript" src="<?= $contentsSection_path ?>/contentsSection.js"></script>
+
+
+<!-- -------------------------------------------------- -->
+<script type="text/javascript">
+	!function() {
+		var elem = document.all[document.all.length - 2];
+		
+		document.body.onhashchange = (e) => setTimeout(function() {
+			var h = elem.getBoundingClientRect().bottom;
+			window.scrollBy(0, -h - 10);
+		});
+	}();
+</script>
+<!-- -------------------------------------------------- -->
+<script type="text/javascript">
+	// Вставляется сразу за открывающим тегом хедера 
+	// и оборачивает старое событие "onhashchange"
+	// в обёртку сдобавлением нового.
+	!function() {
+		var elem = document.all[document.all.length - 2];
+		var oldScript = document.body.onhashchange;
+		
+		document.body.onhashchange = (e) => setTimeout(function() {
+			var h = elem.getBoundingClientRect().bottom;
+			window.scrollBy(0, -h - 10); // Вычисляет высоту
+			// window.scrollBy(0, -50);  // Фиксированная высота
+			oldScript && setTimeout(oldScript);
+		});
+	}();
+</script>
+<!-- -------------------------------------------------- -->
+<script type="text/javascript">
+	// Вставляется сразу за открывающим тегом хедера
+	!function() {
+		var elem = document.all[document.all.length - 2];
+		var oldScript = document.body.onhashchange;
+		
+		document.body.onhashchange = (e) => setTimeout(function() {
+			var h = elem.getBoundingClientRect().bottom;
+			window.scrollBy(0, -50); // Фиксированная высота
+			oldScript && setTimeout(oldScript);
+		});
+	}();
+</script>
+<!-- -------------------------------------------------- -->
+	<link rel="stylesheet" type="text/css" href="/contentsSection/contentsSection.css">
+	<script type="text/javascript" src="/contentsSection/contentsSection.js"></script>
+
+<!-- -------------------------------------------------- -->
+
+<fieldset class="contents-section"><legend>Содержание</legend></fieldset>

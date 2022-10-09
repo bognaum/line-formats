@@ -84,6 +84,32 @@ function css() {
 		.pipe(M.browsersync.stream());
 }
 
+function cS_CSS() {
+	return gulp.src("contentSection/**/*.scss", {"allowEmpty": true})
+		.pipe(M.sourcemaps.init())
+		.pipe(
+			M.sass({
+				outputstyle: "extended"
+			})
+		)
+		.pipe(M.sourcemaps.write())
+		.pipe(gulp.dest("contentSection/"))
+		.pipe(
+			M.autoprefixer({
+				overrideBrowserslist: ["last 5 versions"],
+				cascade: true
+			})
+		)
+		.pipe(M.sourcemaps.write())
+		.pipe(gulp.dest("contentSection/"))
+		.pipe(M.browsersync.stream());
+}
+
+function cSJs() {
+	return gulp.src("contentsSection/**/*.js")
+		.pipe(M.browsersync.stream());
+}
+
 function images() {
 	return gulp.src(SRC+"img/**/*.{jpg,png,svg,ico,M.webp}")
 		.pipe(gulp.dest(DST+"img/"))
@@ -101,6 +127,8 @@ function watch() {
 	gulp.watch([SRC+"**/*.html"   ], html  );
 	gulp.watch([SRC+"css/**/*.*"  ], css   );
 	// gulp.watch([SRC+"js/**/*.js"  ], js    );
+	gulp.watch(["contentSection/**/*.js"  ], cSJs);
+	gulp.watch(["contentSection/**/*.scss"  ], cS_CSS);
 	gulp.watch([SRC+"img/**/*.*"  ], images);
 	gulp.watch([SRC+"fonts/**/*.*"], fonts );
 }
