@@ -22,6 +22,9 @@
 	.c-tree__branch:nth-last-child(1) {
 		border-left: none;
 		padding-bottom: 20px;
+		>.c-tree__branch:nth-last-child(1) {
+			padding-bottom: 0;
+		}
 	}
 	.c-tree__branch>* {
 		margin-left: 50px;
