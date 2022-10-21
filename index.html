@@ -514,11 +514,213 @@
 		  title="D:/GitHub-my/line-formats/src/html/index.html : 500"
 		  style="font-weight: bold; cursor: pointer;">-500-</span> -->
 		
+		
+
+		<h2>Paths</h2>
+		<h3>PHP pathinfo()</h3>
+		<details>
+			<summary>code</summary>
+			<div class="ace-plug-php">
+				&lt;?php
+					$path_parts = pathinfo('/www/htdocs/inc/lib.inc.php');
+
+					echo $path_parts['dirname'  ], "\n";
+					echo $path_parts['basename' ], "\n";
+					echo $path_parts['extension'], "\n";
+					echo $path_parts['filename' ], "\n";
+				?&gt;
+			</div>
+		</details>
+		<br>
+		<div class="lfd" data-line-num="520">
+			[
+				{
+					"td": "dirname",
+					"ch": "/www/htdocs/inc"
+				},
+				{
+					"ch": "/"
+				},
+				{
+					"td": "basename",
+					"ch": [
+						{
+							"td": "filename",
+							"ch": "lib.inc"
+						},
+						{
+							"ch": "."
+						},
+						{
+							"bd": "extension",
+							"td": "",
+							"ch": "php"
+						}
+					]
+				}
+			]
+		</div>
+		<!-- <span
+		  class="fll fll-span"
+		  title="D:/GitHub-my/line-formats/src/html/index.html : 548"
+		  style="font-weight: bold; cursor: pointer;">-548-</span> -->
+		
+
+
+		<h3>NodeJS path.&lt;...&gt;()</h3>
+		<details>
+			<summary>code</summary>
+			<div class="ace-plug-js">
+				console.log(
+					path.dirname ("/www/htdocs/inc/lib.inc.php"), "\n",  // "/www/htdocs/inc"
+					path.basename("/www/htdocs/inc/lib.inc.php"), "\n",  // "lib.inc.php"
+					path.extname ("/www/htdocs/inc/lib.inc.php"), "\n"   // ".php"
+				);
+			</div>
+		</details>
+		<br>
+		<div class="lfd" data-line-num="564">
+			[
+				{
+					"td": "dirname",
+					"ch": "/www/htdocs/inc"
+				},
+				{
+					"ch": "/"
+				},
+				{
+					"td": "basename",
+					"ch": [
+						{
+							"ch": "lib.inc"
+						},
+						{
+							"bd": "extname",
+							"td": "",
+							"ch": ".php"
+						}
+					]
+				}
+			]
+		</div>
+		<!-- <span
+		  class="fll fll-span"
+		  title="D:/GitHub-my/line-formats/src/html/index.html : 588"
+		  style="font-weight: bold; cursor: pointer;">-588-</span> -->
+		
+
+
+		<h3>NodeJS path.parse()</h3>
+		<details>
+			<summary>code</summary>
+			<div class="ace-plug-js">
+				var myPath = path.parse("/www/htdocs/inc/lib.inc.php");
+				console.log(myPath);
+
+				/*
+				{
+				  root: '/',
+				  dir: '/www/htdocs/inc',
+				  base: 'lib.inc.php',
+				  ext: '.php',
+				  name: 'lib.inc'
+				}
+				 */
+			</div>
+			<div class="ace-plug-js">
+				var myPath = path.parse("D:\\GitHub-my\\ace-plug-kit\\templates.html");
+				console.log(myPath);
+
+				/*
+				{
+				  root: 'D:\\',
+				  dir: 'D:\\GitHub-my\\ace-plug-kit',
+				  base: 'templates.html',
+				  ext: '.html',
+				  name: 'templates'
+				}
+				 */
+			</div>
+		</details>
+		<br>
+		<div class="lfd" style="display: inline-block;" data-line-num="625">
+			[
+				{
+					"td": "dir",
+					"ch": [
+						{
+							"bd": "root",
+							"td": "",
+							"ch": "/"
+						},
+						{
+							"ch": "www/htdocs/inc"
+						}
+					]
+				},
+				{
+					"ch": "/"
+				},
+				{
+					"td": "base",
+					"ch": [
+						{
+							"td": "name",
+							"ch": "lib.inc"
+						},
+						{
+							"td": "ext",
+							<!-- "td": "", -->
+							"ch": ".php"
+						}
+					]
+				}
+			]
+		</div>
+		 &nbsp;&nbsp;&nbsp;&nbsp; 
+		<div class="lfd" style="display: inline-block;" data-line-num="660">
+			[
+				{
+					"td": "dir",
+					"ch": [
+						{
+							"bd": "root",
+							"td": "",
+							"ch": "D:\\"
+						},
+						{
+							"ch": "GitHub-my\\ace-plug-kit"
+						}
+					]
+				},
+				{
+					"ch": "\\"
+				},
+				{
+					"td": "base",
+					"ch": [
+						{
+							"td": "name",
+							"ch": "templates"
+						},
+						{
+							"td": "ext",
+							<!-- "td": "", -->
+							"ch": ".html"
+						}
+					]
+				}
+			]
+		</div>
+		<!-- <span
+		  class="fll fll-span"
+		  title="D:/GitHub-my/line-formats/src/html/index.html : 694"
+		  style="font-weight: bold; cursor: pointer;">-694-</span> -->
 
 		<h2>PHP</h2>
 		<h3>PHP $_SERVER</h3>
 
-		<div class="lfd" data-line-num="506">
+		<div class="lfd" data-line-num="699">
 			{
 				"ch": [
 					{
@@ -616,7 +818,7 @@
 				]
 			}
 		</div>
-		<div class="lfd" data-line-num="604">
+		<div class="lfd" data-line-num="797">
 			[
 				{
 					"td": "SCRIPT_FILENAME",
@@ -646,11 +848,11 @@
 		</div>
 		<!-- <span
 		  class="fll fll-span"
-		  title="D:/GitHub-my/line-formats/src/html/index.html : 632"
-		  style="font-weight: bold; cursor: pointer;">-632-</span> -->
+		  title="D:/GitHub-my/line-formats/src/html/index.html : 825"
+		  style="font-weight: bold; cursor: pointer;">-825-</span> -->
 
 		<h3>PHP parts of path</h3>
-		<div class="lfd" data-line-num="635">
+		<div class="lfd" data-line-num="828">
 			[
 				{
 					"td": "__FILE__",
@@ -680,209 +882,9 @@
 		</div>
 		<!-- <span
 		  class="fll fll-span"
-		  title="D:/GitHub-my/line-formats/src/html/index.html : 663"
-		  style="font-weight: bold; cursor: pointer;">-663-</span> -->
+		  title="D:/GitHub-my/line-formats/src/html/index.html : 856"
+		  style="font-weight: bold; cursor: pointer;">-856-</span> -->
 
-
-		<h2>PHP pathinfo()</h2>
-		<details>
-			<summary>code</summary>
-			<div class="ace-plug-php">
-				&lt;?php
-					$path_parts = pathinfo('/www/htdocs/inc/lib.inc.php');
-
-					echo $path_parts['dirname'  ], "\n";
-					echo $path_parts['basename' ], "\n";
-					echo $path_parts['extension'], "\n";
-					echo $path_parts['filename' ], "\n";
-				?&gt;
-			</div>
-		</details>
-		<br>
-		<div class="lfd" data-line-num="681">
-			[
-				{
-					"td": "dirname",
-					"ch": "/www/htdocs/inc"
-				},
-				{
-					"ch": "/"
-				},
-				{
-					"td": "basename",
-					"ch": [
-						{
-							"td": "filename",
-							"ch": "lib.inc"
-						},
-						{
-							"ch": "."
-						},
-						{
-							"bd": "extension",
-							"td": "",
-							"ch": "php"
-						}
-					]
-				}
-			]
-		</div>
-		<!-- <span
-		  class="fll fll-span"
-		  title="D:/GitHub-my/line-formats/src/html/index.html : 709"
-		  style="font-weight: bold; cursor: pointer;">-709-</span> -->
-		
-
-
-		<h2>NodeJS path.&lt;...&gt;()</h2>
-		<details>
-			<summary>code</summary>
-			<div class="ace-plug-js">
-				console.log(
-					path.dirname ("/www/htdocs/inc/lib.inc.php"), "\n",  // "/www/htdocs/inc"
-					path.basename("/www/htdocs/inc/lib.inc.php"), "\n",  // "lib.inc.php"
-					path.extname ("/www/htdocs/inc/lib.inc.php"), "\n"   // ".php"
-				);
-			</div>
-		</details>
-		<br>
-		<div class="lfd" data-line-num="725">
-			[
-				{
-					"td": "dirname",
-					"ch": "/www/htdocs/inc"
-				},
-				{
-					"ch": "/"
-				},
-				{
-					"td": "basename",
-					"ch": [
-						{
-							"ch": "lib.inc"
-						},
-						{
-							"bd": "extname",
-							"td": "",
-							"ch": ".php"
-						}
-					]
-				}
-			]
-		</div>
-		<!-- <span
-		  class="fll fll-span"
-		  title="D:/GitHub-my/line-formats/src/html/index.html : 749"
-		  style="font-weight: bold; cursor: pointer;">-749-</span> -->
-		
-
-
-		<h2>NodeJS path.parse()</h2>
-		<details>
-			<summary>code</summary>
-			<div class="ace-plug-js">
-				var myPath = path.parse("/www/htdocs/inc/lib.inc.php");
-				console.log(myPath);
-
-				/*
-				{
-				  root: '/',
-				  dir: '/www/htdocs/inc',
-				  base: 'lib.inc.php',
-				  ext: '.php',
-				  name: 'lib.inc'
-				}
-				 */
-			</div>
-			<div class="ace-plug-js">
-				var myPath = path.parse("D:\\GitHub-my\\ace-plug-kit\\templates.html");
-				console.log(myPath);
-
-				/*
-				{
-				  root: 'D:\\',
-				  dir: 'D:\\GitHub-my\\ace-plug-kit',
-				  base: 'templates.html',
-				  ext: '.html',
-				  name: 'templates'
-				}
-				 */
-			</div>
-		</details>
-		<br>
-		<div class="lfd" style="display: inline-block;" data-line-num="786">
-			[
-				{
-					"td": "dir",
-					"ch": [
-						{
-							"bd": "root",
-							"td": "",
-							"ch": "/"
-						},
-						{
-							"ch": "www/htdocs/inc"
-						}
-					]
-				},
-				{
-					"ch": "/"
-				},
-				{
-					"td": "base",
-					"ch": [
-						{
-							"td": "name",
-							"ch": "lib.inc"
-						},
-						{
-							"td": "ext",
-							<!-- "td": "", -->
-							"ch": ".php"
-						}
-					]
-				}
-			]
-		</div>
-		 &nbsp;&nbsp;&nbsp;&nbsp; 
-		<div class="lfd" style="display: inline-block;" data-line-num="821">
-			[
-				{
-					"td": "dir",
-					"ch": [
-						{
-							"bd": "root",
-							"td": "",
-							"ch": "D:\\"
-						},
-						{
-							"ch": "GitHub-my\\ace-plug-kit"
-						}
-					]
-				},
-				{
-					"ch": "\\"
-				},
-				{
-					"td": "base",
-					"ch": [
-						{
-							"td": "name",
-							"ch": "templates"
-						},
-						{
-							"td": "ext",
-							<!-- "td": "", -->
-							"ch": ".html"
-						}
-					]
-				}
-			]
-		</div>
-		<!-- <span
-		  class="fll fll-span"
-		  title="D:/GitHub-my/line-formats/src/html/index.html : 855"
-		  style="font-weight: bold; cursor: pointer;">-855-</span> -->
 
 		<h2>JS</h2>
 		<style>
@@ -908,7 +910,7 @@
 			<li>
 				<p><code>str.slice( begin, end )</code></p>
 				
-				<div class="lfd" data-line-num="881">
+				<div class="lfd" data-line-num="883">
 					{
 						"ch": [
 							{
@@ -932,10 +934,10 @@
 				</div>
 				<!-- <span
 				  class="fll fll-span"
-				  title="D:/GitHub-my/line-formats/src/html/index.html : 903"
-				  style="font-weight: bold; cursor: pointer;">-903-</span> -->
+				  title="D:/GitHub-my/line-formats/src/html/index.html : 905"
+				  style="font-weight: bold; cursor: pointer;">-905-</span> -->
 				
-				<div class="lfd" data-line-num="905">
+				<div class="lfd" data-line-num="907">
 					{
 						"ch": [
 							{
@@ -959,12 +961,12 @@
 				</div>
 				<!-- <span
 				  class="fll fll-span"
-				  title="D:/GitHub-my/line-formats/src/html/index.html : 927"
-				  style="font-weight: bold; cursor: pointer;">-927-</span> -->
+				  title="D:/GitHub-my/line-formats/src/html/index.html : 929"
+				  style="font-weight: bold; cursor: pointer;">-929-</span> -->
 			</li>
 			<li>
 				<p><code>str.slice( begin )</code></p>
-				<div class="lfd" data-line-num="931">
+				<div class="lfd" data-line-num="933">
 					{
 						"ch": [
 							{
@@ -981,20 +983,20 @@
 				</div>
 				<!-- <span
 				  class="fll fll-span"
-				  title="D:/GitHub-my/line-formats/src/html/index.html : 946"
-				  style="font-weight: bold; cursor: pointer;">-946-</span> -->
+				  title="D:/GitHub-my/line-formats/src/html/index.html : 948"
+				  style="font-weight: bold; cursor: pointer;">-948-</span> -->
 			</li>
 		</ol>
 		<!-- <span
 		  class="fll fll-span"
-		  title="D:/GitHub-my/line-formats/src/html/index.html : 949"
-		  style="font-weight: bold; cursor: pointer;">-949-</span> -->
+		  title="D:/GitHub-my/line-formats/src/html/index.html : 951"
+		  style="font-weight: bold; cursor: pointer;">-951-</span> -->
 
 		<h3>str.substr()</h3>
 		<ol>
 			<li>
 				<p><code>str.substr( begin, length )</code></p>
-				<div class="lfd" data-line-num="955">
+				<div class="lfd" data-line-num="957">
 					{
 						"ch": [
 							{
@@ -1019,12 +1021,12 @@
 				</div>
 				<!-- <span
 				  class="fll fll-span"
-				  title="D:/GitHub-my/line-formats/src/html/index.html : 978"
-				  style="font-weight: bold; cursor: pointer;">-978-</span> -->
+				  title="D:/GitHub-my/line-formats/src/html/index.html : 980"
+				  style="font-weight: bold; cursor: pointer;">-980-</span> -->
 			</li>
 			<li>
 				<p><code>str.substr( begin )</code></p>
-				<div class="lfd" data-line-num="982">
+				<div class="lfd" data-line-num="984">
 					{
 						"ch": [
 							{
@@ -1041,20 +1043,20 @@
 				</div>
 				<!-- <span
 				  class="fll fll-span"
-				  title="D:/GitHub-my/line-formats/src/html/index.html : 997"
-				  style="font-weight: bold; cursor: pointer;">-997-</span> -->
+				  title="D:/GitHub-my/line-formats/src/html/index.html : 999"
+				  style="font-weight: bold; cursor: pointer;">-999-</span> -->
 			</li>
 		</ol>
 		<!-- <span
 		  class="fll fll-span"
-		  title="D:/GitHub-my/line-formats/src/html/index.html : 1000"
-		  style="font-weight: bold; cursor: pointer;">-1000-</span> -->
+		  title="D:/GitHub-my/line-formats/src/html/index.html : 1002"
+		  style="font-weight: bold; cursor: pointer;">-1002-</span> -->
 
 		<h3>str.substring()</h3>
 		<ol>
 			<li>
 				<p><code>str.substring( indexA, indexB )</code></p>
-				<div class="lfd" data-line-num="1006">
+				<div class="lfd" data-line-num="1008">
 					{
 						"ch": [
 							{
@@ -1076,7 +1078,7 @@
 						]
 					}
 				</div>
-				<div class="lfd" data-line-num="1028">
+				<div class="lfd" data-line-num="1030">
 					{
 						"ch": [
 							{
@@ -1101,7 +1103,7 @@
 			</li>
 			<li>
 				<p><code>str.substring( indexA )</code></p>
-				<div class="lfd" data-line-num="1053">
+				<div class="lfd" data-line-num="1055">
 					{
 						"ch": [
 							{
@@ -1119,8 +1121,8 @@
 		</ol>
 		<!-- <span
 		  class="fll fll-span"
-		  title="D:/GitHub-my/line-formats/src/html/index.html : 1069"
-		  style="font-weight: bold; cursor: pointer;">-1069-</span> -->
+		  title="D:/GitHub-my/line-formats/src/html/index.html : 1071"
+		  style="font-weight: bold; cursor: pointer;">-1071-</span> -->
 		 
 		<h2>CSS</h2>
 		<h3>CSS syntax parts</h3>
@@ -1219,15 +1221,15 @@
 		</div>
 		<!-- <span
 		  class="fll fll-span"
-		  title="D:/GitHub-my/line-formats/src/html/index.html : 1166"
-		  style="font-weight: bold; cursor: pointer;">-1166-</span> -->
+		  title="D:/GitHub-my/line-formats/src/html/index.html : 1168"
+		  style="font-weight: bold; cursor: pointer;">-1168-</span> -->
 
 		<h3>Background</h3>
 		<div class="lfd bottom-lines"
 			data-style="
 				font-size: 14px;
 			"
-			data-line-num="1173">
+			data-line-num="1175">
 			[
 				{
 					"ch": "background: "
@@ -1308,11 +1310,11 @@
 		</div>
 		<!-- <span
 		  class="fll fll-span"
-		  title="D:/GitHub-my/line-formats/src/html/index.html : 1252"
-		  style="font-weight: bold; cursor: pointer;">-1252-</span> -->
+		  title="D:/GitHub-my/line-formats/src/html/index.html : 1254"
+		  style="font-weight: bold; cursor: pointer;">-1254-</span> -->
 
 		<h3>Transition</h3>
-		<div class="lfd bottom-lines" data-line-num="1255">
+		<div class="lfd bottom-lines" data-line-num="1257">
 			{
 				"ch": [
 					{
@@ -1355,11 +1357,11 @@
 		</div>
 		<!-- <span
 		  class="fll fll-span"
-		  title="D:/GitHub-my/line-formats/src/html/index.html : 1296"
-		  style="font-weight: bold; cursor: pointer;">-1296-</span> -->
+		  title="D:/GitHub-my/line-formats/src/html/index.html : 1298"
+		  style="font-weight: bold; cursor: pointer;">-1298-</span> -->
 		
 		<h3>Transform</h3>
-		<div class="lfd bottom-lines" data-line-num="1299">
+		<div class="lfd bottom-lines" data-line-num="1301">
 			{
 				"ch": [
 					{
@@ -1392,11 +1394,11 @@
 		</div>
 		<!-- <span
 		  class="fll fll-span"
-		  title="D:/GitHub-my/line-formats/src/html/index.html : 1330"
-		  style="font-weight: bold; cursor: pointer;">-1330-</span> -->
+		  title="D:/GitHub-my/line-formats/src/html/index.html : 1332"
+		  style="font-weight: bold; cursor: pointer;">-1332-</span> -->
 
 		<h3>Animation</h3>
-		<div class="lfd bottom-lines" data-line-num="1333">
+		<div class="lfd bottom-lines" data-line-num="1335">
 			{
 				"ch": [
 					{
@@ -1492,9 +1494,9 @@
 		</div>
 		<!-- <span
 		  class="fll fll-span"
-		  title="D:/GitHub-my/line-formats/src/html/index.html : 1427"
-		  style="font-weight: bold; cursor: pointer;">-1427-</span> -->
-		<div class="lfd" data-style="font-size: 14px;" data-line-num="1428">
+		  title="D:/GitHub-my/line-formats/src/html/index.html : 1429"
+		  style="font-weight: bold; cursor: pointer;">-1429-</span> -->
+		<div class="lfd" data-style="font-size: 14px;" data-line-num="1430">
 			{
 				"ch": [
 					{
@@ -1566,11 +1568,11 @@
 		</div>
 		<!-- <span
 		  class="fll fll-span"
-		  title="D:/GitHub-my/line-formats/src/html/index.html : 1498"
-		  style="font-weight: bold; cursor: pointer;">-1498-</span> -->
+		  title="D:/GitHub-my/line-formats/src/html/index.html : 1500"
+		  style="font-weight: bold; cursor: pointer;">-1500-</span> -->
 
 		<h3>Linear Gradient</h3>
-		<div class="lfd" data-line-num="1501">
+		<div class="lfd" data-line-num="1503">
 			{
 				"ch": [
 					{
@@ -1625,9 +1627,9 @@
 		</div>
 		<!-- <span
 		  class="fll fll-span"
-		  title="D:/GitHub-my/line-formats/src/html/index.html : 1554"
-		  style="font-weight: bold; cursor: pointer;">-1554-</span> -->
-		<div class="lfd" data-line-num="1555">
+		  title="D:/GitHub-my/line-formats/src/html/index.html : 1556"
+		  style="font-weight: bold; cursor: pointer;">-1556-</span> -->
+		<div class="lfd" data-line-num="1557">
 			{
 				"ch": [
 					{
@@ -1722,11 +1724,11 @@
 		</div>
 		<!-- <span
 		  class="fll fll-span"
-		  title="D:/GitHub-my/line-formats/src/html/index.html : 1648"
-		  style="font-weight: bold; cursor: pointer;">-1648-</span> -->
+		  title="D:/GitHub-my/line-formats/src/html/index.html : 1650"
+		  style="font-weight: bold; cursor: pointer;">-1650-</span> -->
 
 		<h3>Radial gradient</h3>
-		<div class="lfd" data-line-num="1651">
+		<div class="lfd" data-line-num="1653">
 			{
 				"ch": [
 					{
@@ -1761,13 +1763,13 @@
 		</div>
 		<!-- <span
 		  class="fll fll-span"
-		  title="D:/GitHub-my/line-formats/src/html/index.html : 1684"
-		  style="font-weight: bold; cursor: pointer;">-1684-</span> -->
+		  title="D:/GitHub-my/line-formats/src/html/index.html : 1686"
+		  style="font-weight: bold; cursor: pointer;">-1686-</span> -->
 		<div class="lfd" 
 			data-style="
 				font-size: 14px;
 			" 
-			data-line-num="1689">
+			data-line-num="1691">
 			{
 				"ch": [
 					{
@@ -1894,11 +1896,11 @@
 		</div>
 		<!-- <span
 		  class="fll fll-span"
-		  title="D:/GitHub-my/line-formats/src/html/index.html : 1814"
-		  style="font-weight: bold; cursor: pointer;">-1814-</span> -->
+		  title="D:/GitHub-my/line-formats/src/html/index.html : 1816"
+		  style="font-weight: bold; cursor: pointer;">-1816-</span> -->
 
 		<h3>text-decoration</h3>
-		<div class="lfd bottom-lines" data-line-num="1817">
+		<div class="lfd bottom-lines" data-line-num="1819">
 			{
 				"ch": [
 					{
@@ -1940,11 +1942,11 @@
 		</div>
 		<!-- <span
 		  class="fll fll-span"
-		  title="D:/GitHub-my/line-formats/src/html/index.html : 1857"
-		  style="font-weight: bold; cursor: pointer;">-1857-</span> -->
+		  title="D:/GitHub-my/line-formats/src/html/index.html : 1859"
+		  style="font-weight: bold; cursor: pointer;">-1859-</span> -->
 
 		<h3>font-weight:</h3>
-		<div class="lfd" data-line-num="1860">
+		<div class="lfd" data-line-num="1862">
 			{
 				"ch": [
 					{
@@ -1962,8 +1964,8 @@
 		</div>
 		<!-- <span
 		  class="fll fll-span"
-		  title="D:/GitHub-my/line-formats/src/html/index.html : 1876"
-		  style="font-weight: bold; cursor: pointer;">-1876-</span> -->
+		  title="D:/GitHub-my/line-formats/src/html/index.html : 1878"
+		  style="font-weight: bold; cursor: pointer;">-1878-</span> -->
 
 		<h3>@font-face</h3>
 		<p>
@@ -1984,7 +1986,7 @@
 			data-style="
 				font-size: 17px;
 			"
-			data-line-num="1897">
+			data-line-num="1899">
 			{
 				"ch": [
 					{
@@ -2067,10 +2069,10 @@
 		</div>
 		<!-- <span
 		  class="fll fll-span"
-		  title="D:/GitHub-my/line-formats/src/html/index.html : 1978"
-		  style="font-weight: bold; cursor: pointer;">-1978-</span> -->
+		  title="D:/GitHub-my/line-formats/src/html/index.html : 1980"
+		  style="font-weight: bold; cursor: pointer;">-1980-</span> -->
 		<h4>@font-face font-weight:  font-style:</h4>
-		<div class="lfd" data-line-num="1980">
+		<div class="lfd" data-line-num="1982">
 			{
 				"ch": [
 					{
@@ -2095,12 +2097,12 @@
 		</div>
 		<!-- <span
 		  class="fll fll-span"
-		  title="D:/GitHub-my/line-formats/src/html/index.html : 2003"
-		  style="font-weight: bold; cursor: pointer;">-2003-</span> -->
+		  title="D:/GitHub-my/line-formats/src/html/index.html : 2005"
+		  style="font-weight: bold; cursor: pointer;">-2005-</span> -->
 
 		<h2>SVG</h2>
 		<h3>svg preserveAspectRatio</h3>
-		<div class="lfd" data-line-num="2007">
+		<div class="lfd" data-line-num="2009">
 			[
 				{
 					"ch": "preserveAspektRatio=\""
@@ -2140,8 +2142,8 @@
 		
 		<!-- <span
 		  class="fll fll-span"
-		  title="D:/GitHub-my/line-formats/src/html/index.html : 2045"
-		  style="font-weight: bold; cursor: pointer;">-2045-</span> -->
+		  title="D:/GitHub-my/line-formats/src/html/index.html : 2047"
+		  style="font-weight: bold; cursor: pointer;">-2047-</span> -->
 	</div>
 	<script type="text/javascript">
 		// place at the bottom of the page
